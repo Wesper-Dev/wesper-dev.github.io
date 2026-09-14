@@ -1,0 +1,129 @@
+[
+  {
+    "id": "gemma",
+    "name": "Paris Gemma 4 Hackathon",
+    "date": "2026",
+    "project": "droit-de-retard",
+    "fr": {
+      "context": "Agents et documents de voyage",
+      "contribution": "Participation au projet collectif d’origine, puis continuation personnelle dans droit-de-retard.",
+      "outcome": "Prototype ; poursuite sur les validations et les tests."
+    },
+    "en": {
+      "context": "Agents and travel documents",
+      "contribution": "Participation in the original team project, followed by a personal continuation in droit-de-retard.",
+      "outcome": "Prototype; continued work on validation and tests."
+    },
+    "link": null
+  },
+  {
+    "id": "gcpu",
+    "name": "Google Cloud Partner Agentic AI Hackathon",
+    "date": "2025",
+    "project": "diary",
+    "fr": {
+      "context": "Kura · journal audio collectif",
+      "contribution": "Travail en équipe sur Kura, un projet de journal audio.",
+      "outcome": "Projet prolongé lors d’un second événement et par le dépôt personnel Diary."
+    },
+    "en": {
+      "context": "Kura · team voice journal",
+      "contribution": "Team work on Kura, a voice-journal project.",
+      "outcome": "Continued at a second event and through the personal Diary repository."
+    },
+    "link": null
+  },
+  {
+    "id": "station-f",
+    "name": "STATION F One-Person Unicorn Vibe-a-thon",
+    "date": "2025",
+    "project": "diary",
+    "fr": {
+      "context": "Kura · deuxième événement",
+      "contribution": "Poursuite en équipe du même projet de journal audio.",
+      "outcome": "Prototype collectif ; cet événement ne correspond pas à un second projet indépendant."
+    },
+    "en": {
+      "context": "Kura · second event",
+      "contribution": "Continued team work on the same voice-journal project.",
+      "outcome": "Team prototype; this event does not represent a second independent project."
+    },
+    "link": null
+  },
+  {
+    "id": "shipfast",
+    "name": "ShipFast × Unaite × 42AI",
+    "date": "2025-07-26",
+    "project": null,
+    "fr": {
+      "context": "Assistance aux appels d’urgence",
+      "contribution": "Participation au prototype collectif ; contributions enregistrées dans le dépôt de l’équipe.",
+      "outcome": "Exploration de transcription, traduction et assistance au dispatch."
+    },
+    "en": {
+      "context": "Emergency-call assistance",
+      "contribution": "Participation in the team prototype, with contributions recorded in the team repository.",
+      "outcome": "Exploration of transcription, translation and dispatch assistance."
+    },
+    "link": {
+      "url": "https://github.com/epanner/shipfast-hack-25",
+      "fr": "Dépôt de l’équipe",
+      "en": "Team repository"
+    }
+  },
+  {
+    "id": "lerobot",
+    "name": "LeRobot Hackathon · 42 Paris",
+    "date": "2025-06-14/2025-06-15",
+    "project": null,
+    "fr": {
+      "context": "Robotique · apprentissage par imitation",
+      "contribution": "Travail sur l’apprentissage par imitation et la détection YOLOv5 sur un bras robotique, dans une équipe visant le jeu de Puissance 4.",
+      "outcome": "Prototype inachevé ; le robot jouant une partie complète n’a pas été finalisé."
+    },
+    "en": {
+      "context": "Robotics · imitation learning",
+      "contribution": "Work on imitation learning and YOLOv5 detection for a robot arm, within a team exploring Connect Four.",
+      "outcome": "Unfinished prototype; the robot playing a complete game was not finalised."
+    },
+    "link": null
+  },
+  {
+    "id": "ia-crise",
+    "name": "IA & Crise · Croix-Rouge / Simplon",
+    "date": "2025-04-04/2025-04-05",
+    "project": "croix-rouge",
+    "fr": {
+      "context": "Formation aux premiers secours",
+      "contribution": "Contribution bénévole à une partie de la couche IA et au cadrage avec les formateurs.",
+      "outcome": "Plateforme collective présentée à ChangeNOW 2025 ; échanges avec les visiteurs au stand Croix-Rouge."
+    },
+    "en": {
+      "context": "First-aid training",
+      "contribution": "Volunteer work on part of the AI layer and problem framing with trainers.",
+      "outcome": "Team platform shown at ChangeNOW 2025; conversations with visitors at the Red Cross stand."
+    },
+    "link": null
+  },
+  {
+    "id": "datacenter",
+    "name": "Datacenter Hardware Hackathon",
+    "date": "2024",
+    "project": null,
+    "fr": {
+      "context": "Matériel et infrastructure",
+      "contribution": "Participation en équipe : configuration de baie serveur, BIOS, réseau et Bash.",
+      "outcome": "Expérimentation matérielle collective, documentée dans mon compte rendu public."
+    },
+    "en": {
+      "context": "Hardware and infrastructure",
+      "contribution": "Team participation: server-rack configuration, BIOS, networking and Bash.",
+      "outcome": "Team hardware experiment, documented in my public account."
+    },
+    "link": {
+      "url": "https://www.linkedin.com/posts/arnaud-durand42_ai-deepmind-alphafold-activity-7250922511121416193-363Q/",
+      "fr": "Mon compte rendu sur LinkedIn",
+      "en": "My account on LinkedIn"
+    }
+  }
+]
