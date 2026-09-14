@@ -1,8 +1,157 @@
 [
- {"id":"droit-de-retard","name":"Droit de Retard","year":"2026","repo":"https://github.com/Wesper-Dev/droit-de-retard","story":"droit-de-retard","tags":["Python","Agents","Local-first"],"fr":{"summary":"Préparer un brouillon de réclamation aérienne à partir de documents, avec des validations et calculs explicites en Python.","role":"Continuation personnelle d’un projet collectif : validation des appels d’outils, tests de régression et CI.","status":"Prototype informatif"},"en":{"summary":"Prepare a draft flight claim from documents, with explicit validation and calculations in Python.","role":"Personal continuation of a team project: tool-call validation, regression tests and CI.","status":"Informational prototype"}},
- {"id":"diary","name":"Diary / Kura","year":"2025","repo":"https://github.com/Wesper-Dev/Diary","story":"diary","tags":["Audio","React","FastAPI"],"fr":{"summary":"Relier l’enregistrement vocal dans le navigateur au traitement audio, au stockage et aux rapports hebdomadaires.","role":"Continuation personnelle de Kura, projet développé en équipe pendant deux hackathons.","status":"Preuve de concept"},"en":{"summary":"Connect browser voice recordings to audio processing, storage and weekly reports.","role":"Personal continuation of Kura, a team project developed across two hackathons.","status":"Proof of concept"}},
- {"id":"croix-rouge","name":"Croix-Rouge","year":"2025","repo":"https://github.com/Wesper-Dev/CroixRouge-Hackathon","upstream":"https://github.com/copeugne/CroixRouge-Hackathon","story":"croix-rouge","tags":["AI","Volunteering"],"fr":{"summary":"Plateforme collective de formation aux premiers secours, présentée à ChangeNOW 2025 ; échanges avec les visiteurs au stand Croix-Rouge.","role":"Bénévolat : partie de la couche IA et cadrage avec les formateurs. Le dépôt est un fork du projet collectif.","status":"Projet collectif présenté publiquement"},"en":{"summary":"A collective first-aid training platform, shown at ChangeNOW 2025; conversations with visitors at the Red Cross stand.","role":"Volunteer contribution to part of the AI layer and problem framing with trainers. The repository is a fork of the team project.","status":"Team project presented publicly"}},
- {"id":"minishell","name":"Minishell","year":null,"repo":"https://github.com/Wesper-Dev/Minishell","story":null,"tags":["C","UNIX"],"fr":{"summary":"Un shell en C : exécution de commandes, pipes, redirections et gestion des processus.","role":"Projet du cursus 42 ; travail sur l’exécution et les appels système UNIX.","status":"Projet pédagogique"},"en":{"summary":"A shell in C: command execution, pipes, redirections and process handling.","role":"42 curriculum project; work on execution and UNIX system calls.","status":"Learning project"}},
- {"id":"inception","name":"Inception","year":null,"repo":"https://github.com/Wesper-Dev/Inception","story":null,"tags":["Docker","Linux"],"fr":{"summary":"Infrastructure multi-conteneurs avec NGINX, WordPress et MariaDB, volumes persistants et réseau dédié.","role":"Projet du cursus 42 : Dockerfiles et orchestration des services.","status":"Projet pédagogique"},"en":{"summary":"Multi-container infrastructure with NGINX, WordPress and MariaDB, persistent volumes and a dedicated network.","role":"42 curriculum project: Dockerfiles and service orchestration.","status":"Learning project"}},
- {"id":"philosophers","name":"Philosophers","year":null,"repo":"https://github.com/Wesper-Dev/Philosophers","story":null,"tags":["C","Concurrency"],"fr":{"summary":"Simulation du problème des philosophes avec threads POSIX, mutex et surveillance de la simulation.","role":"Projet du cursus 42 consacré à la synchronisation et aux ressources partagées.","status":"Projet pédagogique"},"en":{"summary":"Dining philosophers simulation with POSIX threads, mutexes and a monitoring routine.","role":"42 curriculum project focused on synchronisation and shared resources.","status":"Learning project"}}
+  {
+    "id": "droit-de-retard",
+    "name": "Droit de Retard",
+    "year": "2026",
+    "repo": "https://github.com/Wesper-Dev/droit-de-retard",
+    "story": "droit-de-retard",
+    "fr": {
+      "summary": "Préparer un brouillon de réclamation aérienne à partir de documents, avec des validations et calculs explicites en Python.",
+      "role": "Continuation personnelle d’un projet collectif : validation des appels d’outils, tests de régression et CI.",
+      "status": "Prototype informatif",
+      "tags": [
+        "Python",
+        "Agents",
+        "Local-first"
+      ]
+    },
+    "en": {
+      "summary": "Prepare a draft flight claim from documents, with explicit validation and calculations in Python.",
+      "role": "Personal continuation of a team project: tool-call validation, regression tests and CI.",
+      "status": "Informational prototype",
+      "tags": [
+        "Python",
+        "Agents",
+        "Local-first"
+      ]
+    }
+  },
+  {
+    "id": "diary",
+    "name": "Diary / Kura",
+    "year": "2025",
+    "repo": "https://github.com/Wesper-Dev/Diary",
+    "story": "diary",
+    "fr": {
+      "summary": "Relier l’enregistrement vocal dans le navigateur au traitement audio, au stockage et aux rapports hebdomadaires.",
+      "role": "Continuation personnelle de Kura, projet développé en équipe pendant deux hackathons.",
+      "status": "Preuve de concept",
+      "tags": [
+        "Audio",
+        "React",
+        "FastAPI"
+      ]
+    },
+    "en": {
+      "summary": "Connect browser voice recordings to audio processing, storage and weekly reports.",
+      "role": "Personal continuation of Kura, a team project developed across two hackathons.",
+      "status": "Proof of concept",
+      "tags": [
+        "Audio",
+        "React",
+        "FastAPI"
+      ]
+    }
+  },
+  {
+    "id": "croix-rouge",
+    "name": "Croix-Rouge",
+    "year": "2025",
+    "repo": "https://github.com/Wesper-Dev/CroixRouge-Hackathon",
+    "upstream": "https://github.com/copeugne/CroixRouge-Hackathon",
+    "story": "croix-rouge",
+    "fr": {
+      "summary": "Plateforme collective de formation aux premiers secours, présentée à ChangeNOW 2025 ; échanges avec les visiteurs au stand Croix-Rouge.",
+      "role": "Bénévolat : partie de la couche IA et cadrage avec les formateurs. Le dépôt est un fork du projet collectif.",
+      "status": "Projet collectif présenté publiquement",
+      "tags": [
+        "IA",
+        "Bénévolat"
+      ]
+    },
+    "en": {
+      "summary": "A collective first-aid training platform, shown at ChangeNOW 2025; conversations with visitors at the Red Cross stand.",
+      "role": "Volunteer contribution to part of the AI layer and problem framing with trainers. The repository is a fork of the team project.",
+      "status": "Team project presented publicly",
+      "tags": [
+        "AI",
+        "Volunteering"
+      ]
+    }
+  },
+  {
+    "id": "minishell",
+    "name": "Minishell",
+    "year": null,
+    "repo": "https://github.com/Wesper-Dev/Minishell",
+    "story": null,
+    "fr": {
+      "summary": "Un shell en C : exécution de commandes, pipes, redirections et gestion des processus.",
+      "role": "Projet du cursus 42 ; travail sur l’exécution et les appels système UNIX.",
+      "status": "Projet pédagogique",
+      "tags": [
+        "C",
+        "UNIX"
+      ]
+    },
+    "en": {
+      "summary": "A shell in C: command execution, pipes, redirections and process handling.",
+      "role": "42 curriculum project; work on execution and UNIX system calls.",
+      "status": "Learning project",
+      "tags": [
+        "C",
+        "UNIX"
+      ]
+    }
+  },
+  {
+    "id": "inception",
+    "name": "Inception",
+    "year": null,
+    "repo": "https://github.com/Wesper-Dev/Inception",
+    "story": null,
+    "fr": {
+      "summary": "Infrastructure multi-conteneurs avec NGINX, WordPress et MariaDB, volumes persistants et réseau dédié.",
+      "role": "Projet du cursus 42 : Dockerfiles et orchestration des services.",
+      "status": "Projet pédagogique",
+      "tags": [
+        "Docker",
+        "Linux"
+      ]
+    },
+    "en": {
+      "summary": "Multi-container infrastructure with NGINX, WordPress and MariaDB, persistent volumes and a dedicated network.",
+      "role": "42 curriculum project: Dockerfiles and service orchestration.",
+      "status": "Learning project",
+      "tags": [
+        "Docker",
+        "Linux"
+      ]
+    }
+  },
+  {
+    "id": "philosophers",
+    "name": "Philosophers",
+    "year": null,
+    "repo": "https://github.com/Wesper-Dev/Philosophers",
+    "story": null,
+    "fr": {
+      "summary": "Simulation du problème des philosophes avec threads POSIX, mutex et surveillance de la simulation.",
+      "role": "Projet du cursus 42 consacré à la synchronisation et aux ressources partagées.",
+      "status": "Projet pédagogique",
+      "tags": [
+        "C",
+        "Concurrence"
+      ]
+    },
+    "en": {
+      "summary": "Dining philosophers simulation with POSIX threads, mutexes and a monitoring routine.",
+      "role": "42 curriculum project focused on synchronisation and shared resources.",
+      "status": "Learning project",
+      "tags": [
+        "C",
+        "Concurrency"
+      ]
+    }
+  }
 ]
