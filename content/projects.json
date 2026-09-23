@@ -61,8 +61,8 @@
     "upstream": "https://github.com/copeugne/CroixRouge-Hackathon",
     "story": "croix-rouge",
     "fr": {
-      "summary": "Plateforme collective de formation aux premiers secours, présentée à ChangeNOW 2025 ; échanges avec les visiteurs au stand Croix-Rouge.",
-      "role": "Bénévolat : partie de la couche IA et cadrage avec les formateurs. Le dépôt est un fork du projet collectif.",
+      "summary": "Plateforme collective de formation aux premiers secours, 1re sur 12 équipes à IA & Crise, utilisée par plus de 50 bénévoles, présentée à ChangeNOW et au sommet AI for Good (2025).",
+      "role": "Bénévolat : couche IA construite avec l’équipe — RAG sur un manuel de 700 pages et coach socratique. Ce code est resté interne à la Croix-Rouge ; le dépôt est un fork du projet collectif.",
       "status": "Projet collectif présenté publiquement",
       "tags": [
         "IA",
@@ -70,8 +70,8 @@
       ]
     },
     "en": {
-      "summary": "A collective first-aid training platform, shown at ChangeNOW 2025; conversations with visitors at the Red Cross stand.",
-      "role": "Volunteer contribution to part of the AI layer and problem framing with trainers. The repository is a fork of the team project.",
+      "summary": "A collective first-aid training platform, 1st of 12 teams at IA & Crise, used by 50+ volunteers, shown at ChangeNOW and the AI for Good summit (2025).",
+      "role": "Volunteer: built the AI layer with the team — RAG over a 700-page manual and a Socratic coach. That code stayed inside the Red Cross; the repository is a fork of the team project.",
       "status": "Team project presented publicly",
       "tags": [
         "AI",
@@ -126,31 +126,6 @@
       "tags": [
         "Docker",
         "Linux"
-      ]
-    }
-  },
-  {
-    "id": "philosophers",
-    "name": "Philosophers",
-    "year": null,
-    "repo": "https://github.com/Wesper-Dev/Philosophers",
-    "story": null,
-    "fr": {
-      "summary": "Simulation du problème des philosophes avec threads POSIX, mutex et surveillance de la simulation.",
-      "role": "Projet du cursus 42 consacré à la synchronisation et aux ressources partagées.",
-      "status": "Projet pédagogique",
-      "tags": [
-        "C",
-        "Concurrence"
-      ]
-    },
-    "en": {
-      "summary": "Dining philosophers simulation with POSIX threads, mutexes and a monitoring routine.",
-      "role": "42 curriculum project focused on synchronisation and shared resources.",
-      "status": "Learning project",
-      "tags": [
-        "C",
-        "Concurrency"
       ]
     }
   }

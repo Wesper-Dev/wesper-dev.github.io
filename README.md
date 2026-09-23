@@ -23,7 +23,7 @@ Aperçu : http://127.0.0.1:4173/fr/ et http://127.0.0.1:4173/. Le serveur statiq
 
 ## Routes et export
 
-Chaque langue possède un accueil, `/projects/`, `/hackathons/` et les récits `/projects/droit-de-retard/`, `/projects/diary/`, `/projects/croix-rouge/`. Les chemins français sont préfixés `/fr/`.
+Chaque langue possède un accueil, `/projects/`, `/hackathons/`, `/skills/` et les récits `/projects/droit-de-retard/`, `/projects/diary/`, `/projects/croix-rouge/`. Les chemins français sont préfixés `/fr/` — l'onglet Compétences garde le segment `skills/` dans les deux langues, seul son libellé change.
 
 Vinext exporte des fichiers `.html` sans slash terminal. `scripts/normalize-export.mjs` crée un vrai `index.html` pour chaque répertoire. `/missing` sert de source technique à la `404.html` bilingue ; cette page n’est pas dans le sitemap. Le navigateur peut ouvrir chaque route directement, sans repli sur une SPA ni serveur applicatif.
 
@@ -45,6 +45,8 @@ Cette commande construit uniquement en local ; elle ne publie rien. Les canonica
 - `content/projects.json` : six fiches bilingues, rôle, statut, dépôt et éventuel récit. Les tags sont stockés dans chaque langue (`fr.tags`, `en.tags`) ; conserver les noms techniques et traduire les libellés éditoriaux. Les aperçus d’accueil consomment ces fiches.
 - `content/hackathons.json` : événements, date connue, contexte/contribution/résultat FR/EN. `project` mène au récit local ; `link` est une destination publique facultative et explicitement libellée. Ne pas ajouter une source privée comme lien de navigation par défaut.
 - `content/stories/{en,fr}/` : récits Markdown. Sous-ensemble pris en charge : titre `#`, sections `##`, paragraphes, listes de liens HTTPS et code en ligne. Aucun HTML brut. Modifier les deux langues ensemble.
+- `content/skills.ts` : l'onglet Compétences. **Même liste que le CV** (`deliverables/cv/source/facts.py`, `SKILLS`) : la modifier des deux côtés à la fois, sinon le site et le CV se contredisent. Chaque entrée porte sa preuve et, quand elle existe, un lien vers la page ou le dépôt qui l'atteste ; pas de niveau affiché.
+- `public/cv/` : les quatre CV publics sans téléphone (deux pistes × deux langues), copiés depuis `deliverables/cv/cv-public-{platform,systems}-{fr,en}.pdf` et renommés `arnaud-durand-cv-<piste>-<langue>.pdf`. Les regénérer avec `deliverables/cv/source/build.sh`, puis recopier ici.
 - `content/home.ts` : présentation, parcours, engagements et libellés. `content/indexes.json` : introductions des index.
 - `components/` : présentation ; les quatre composants de page partagent navigation, contact et pied de page via `site-shell.tsx`.
 - `lib/metadata.ts` : métadonnées par route. `public/og.jpg` : carte typographique générale ; `public/images/droit-de-retard-social.jpg` est la carte 1200 × 630 du récit Droit de Retard. La capture complète reste affichée dans la page.

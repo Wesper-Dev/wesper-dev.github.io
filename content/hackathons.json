@@ -14,7 +14,8 @@
       "contribution": "Participation in the original team project, followed by a personal continuation in droit-de-retard.",
       "outcome": "Prototype; continued work on validation and tests."
     },
-    "link": null
+    "link": null,
+    "rank": null
   },
   {
     "id": "gcpu",
@@ -31,7 +32,8 @@
       "contribution": "Team work on Kura, a voice-journal project.",
       "outcome": "Continued at a second event and through the personal Diary repository."
     },
-    "link": null
+    "link": null,
+    "rank": null
   },
   {
     "id": "station-f",
@@ -48,7 +50,8 @@
       "contribution": "Continued team work on the same voice-journal project.",
       "outcome": "Team prototype; this event does not represent a second independent project."
     },
-    "link": null
+    "link": null,
+    "rank": null
   },
   {
     "id": "shipfast",
@@ -69,7 +72,8 @@
       "url": "https://github.com/epanner/shipfast-hack-25",
       "fr": "Dépôt de l’équipe",
       "en": "Team repository"
-    }
+    },
+    "rank": null
   },
   {
     "id": "lerobot",
@@ -86,7 +90,8 @@
       "contribution": "Work on imitation learning and YOLOv5 detection for a robot arm, within a team exploring Connect Four.",
       "outcome": "Unfinished prototype; the robot playing a complete game was not finalised."
     },
-    "link": null
+    "link": null,
+    "rank": null
   },
   {
     "id": "ia-crise",
@@ -95,35 +100,110 @@
     "project": "croix-rouge",
     "fr": {
       "context": "Formation aux premiers secours",
-      "contribution": "Contribution bénévole à une partie de la couche IA et au cadrage avec les formateurs.",
-      "outcome": "Plateforme collective présentée à ChangeNOW 2025 ; échanges avec les visiteurs au stand Croix-Rouge."
+      "contribution": "Couche IA construite avec l’équipe, en bénévole : RAG sur un manuel de 700 pages et coach socratique.",
+      "outcome": "Plateforme utilisée par plus de 50 bénévoles, présentée à ChangeNOW puis au sommet AI for Good (2025) ; au salon ChangeNOW, échanges avec les visiteurs au stand Croix-Rouge."
     },
     "en": {
       "context": "First-aid training",
-      "contribution": "Volunteer work on part of the AI layer and problem framing with trainers.",
-      "outcome": "Team platform shown at ChangeNOW 2025; conversations with visitors at the Red Cross stand."
+      "contribution": "Volunteer: built the AI layer with the team — RAG over a 700-page manual and a Socratic coach.",
+      "outcome": "Platform used by 50+ volunteers, presented at ChangeNOW and at the AI for Good summit (2025); at ChangeNOW, conversations with visitors at the Red Cross stand."
     },
-    "link": null
+    "link": null,
+    "rank": {
+      "fr": "1re sur 12 équipes",
+      "en": "1st of 12 teams"
+    }
+  },
+  {
+    "id": "science-infuze",
+    "name": "Voyage au Cœur des Sciences · Science inFuZe",
+    "date": "2025-03-31",
+    "project": null,
+    "fr": {
+      "context": "Femmes et sciences · track de l’Académie de Versailles",
+      "contribution": "En équipe de quatre : une web app pour promouvoir les femmes dans le milieu scientifique — témoignages de femmes scientifiques, et des jeux qui font essayer aux filles des activités d’ordinaire plus pratiquées par les garçons.",
+      "outcome": "Track de l’Académie de Versailles remportée par l’équipe."
+    },
+    "en": {
+      "context": "Women in science · Académie de Versailles track",
+      "contribution": "In a team of four: a web app promoting women in science — testimonies from women scientists, and games that let girls try activities more often done by boys.",
+      "outcome": "The team won the Académie de Versailles track."
+    },
+    "link": {
+      "url": "https://scienceinfuze.com/hackathon/",
+      "fr": "Page de l’événement",
+      "en": "Event page"
+    },
+    "rank": {
+      "fr": "1re place de track",
+      "en": "Track winner"
+    }
+  },
+  {
+    "id": "hackathon-54",
+    "name": "Hackathon 54 · 54e régiment de transmissions",
+    "date": "2024-12-07/2024-12-08",
+    "project": null,
+    "fr": {
+      "context": "Défense · transmissions",
+      "contribution": "Projet d’équipe sur un sujet de transmissions ; détails techniques non publiés.",
+      "outcome": "Concept retenu pour la suite du développement."
+    },
+    "en": {
+      "context": "Defence · communications",
+      "contribution": "Team project on a communications problem; technical details not published.",
+      "outcome": "Concept taken forward for further development."
+    },
+    "link": null,
+    "rank": {
+      "fr": "3e sur 25 équipes",
+      "en": "3rd of 25 teams"
+    }
   },
   {
     "id": "datacenter",
-    "name": "Datacenter Hardware Hackathon",
+    "name": "Google Datacenter Hardware Hackathon",
     "date": "2024",
     "project": null,
     "fr": {
       "context": "Matériel et infrastructure",
-      "contribution": "Participation en équipe : configuration de baie serveur, BIOS, réseau et Bash.",
+      "contribution": "En équipe : configuration de baie serveur, BIOS, réseau et Bash.",
       "outcome": "Expérimentation matérielle collective, documentée dans mon compte rendu public."
     },
     "en": {
       "context": "Hardware and infrastructure",
-      "contribution": "Team participation: server-rack configuration, BIOS, networking and Bash.",
+      "contribution": "Team work: server-rack configuration, BIOS, networking and Bash.",
       "outcome": "Team hardware experiment, documented in my public account."
     },
     "link": {
       "url": "https://www.linkedin.com/posts/arnaud-durand42_ai-deepmind-alphafold-activity-7250922511121416193-363Q/",
       "fr": "Mon compte rendu sur LinkedIn",
       "en": "My account on LinkedIn"
+    },
+    "rank": {
+      "fr": "1re place",
+      "en": "1st place"
+    }
+  },
+  {
+    "id": "lcl",
+    "name": "LCL × Google Cloud",
+    "date": "2024",
+    "project": null,
+    "fr": {
+      "context": "Banque · IA conversationnelle",
+      "contribution": "En équipe : un chatbot de recommandation de cartes bancaires, sur des données mises à disposition par LCL.",
+      "outcome": "12 équipes de 8 écoles. Projet hors ligne depuis la fermeture de son environnement cloud."
+    },
+    "en": {
+      "context": "Banking · conversational AI",
+      "contribution": "Team work: a bank-card recommendation chatbot, on data provided by LCL.",
+      "outcome": "12 teams from 8 schools. The project is offline since its cloud environment was closed."
+    },
+    "link": null,
+    "rank": {
+      "fr": "2e place",
+      "en": "2nd place"
     }
   }
 ]

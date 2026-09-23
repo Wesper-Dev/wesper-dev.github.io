@@ -14,7 +14,7 @@ if args.private_patterns:
  patterns.extend(json.loads(args.private_patterns.read_text()))
 forbidden=re.compile('|'.join(patterns),re.I)
 origin='https://wesper-dev.github.io'
-paths=['','projects/','hackathons/','projects/droit-de-retard/','projects/diary/','projects/croix-rouge/']
+paths=['','projects/','hackathons/','skills/','projects/droit-de-retard/','projects/diary/','projects/croix-rouge/']
 routes=['/'+prefix+p for prefix in ['', 'fr/'] for p in paths]
 class Page(HTMLParser):
  def __init__(self,content):

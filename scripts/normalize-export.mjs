@@ -2,7 +2,7 @@
 import {mkdir,copyFile,access,writeFile} from 'node:fs/promises';
 const root=new URL('../dist/client/',import.meta.url);
 const origin='https://wesper-dev.github.io';
-const paths=['','projects/','hackathons/','projects/droit-de-retard/','projects/diary/','projects/croix-rouge/'];
+const paths=['','projects/','hackathons/','skills/','projects/droit-de-retard/','projects/diary/','projects/croix-rouge/'];
 const routes=paths.flatMap(p=>['/'+p,'/fr/'+p]);
 for(const route of routes){
  const relative=route.slice(1);
