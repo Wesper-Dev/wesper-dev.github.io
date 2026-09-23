@@ -200,7 +200,11 @@
       "contribution": "Team work: a bank-card recommendation chatbot, on data provided by LCL.",
       "outcome": "12 teams from 8 schools. The project is offline since its cloud environment was closed."
     },
-    "link": null,
+    "link": {
+      "url": "https://github.com/Wesper-Dev/My-BankBot",
+      "fr": "Dépôt du projet",
+      "en": "Project repository"
+    },
     "rank": {
       "fr": "2e place",
       "en": "2nd place"

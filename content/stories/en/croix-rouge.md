@@ -14,7 +14,7 @@ As a volunteer, I built the platform’s AI layer with the team, designed to hel
 
 At ChangeNOW 2025, I stayed with the team at the stand to discuss the project with the French Red Cross and visitors, and listen to their questions. A colleague delivered the English pitch on a small stage.
 
-The project finished **1st of 12 teams** at the IA & Crise hackathon, and the platform was used by more than 50 volunteers. In July 2025, Pierre Ly, head of innovation at the French Red Cross, presented it at the AI for Good summit in Geneva on the team’s behalf.
+The project finished 1st of 12 teams at the IA & Crise hackathon, and the platform was used by more than 50 volunteers. In July 2025, Pierre Ly, head of innovation at the French Red Cross, presented it at the AI for Good summit in Geneva on the team’s behalf.
 
 The experience combines two things I enjoy: contributing to a tool and discussing it directly with the people concerned.
 

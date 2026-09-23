@@ -46,11 +46,10 @@ export const skills: Record<Locale, {
       ]},
     ],
     cvTitle: 'The same thing, on one page',
-    cvText: 'My CV holds this list and the rest of the story. Two readings of the same facts — nothing changes but the order: one leads with the platform work, the other with the systems work. These are the public copies: identical wording, without my phone number.',
+    cvText: 'My CV holds this list and the rest of the story. This is the public copy: identical wording, without my phone number.',
     cvNote: 'Written for a permanent role from 16 October 2026. Write to me and I will send the version with a phone number.',
     cvTracks: [
       { id: 'platform', label: 'AI Platform / Applied AI', fr: 'French (PDF)', en: 'English (PDF)' },
-      { id: 'systems', label: 'Software & Systems', fr: 'French (PDF)', en: 'English (PDF)' },
     ],
   },
   fr: {
@@ -84,11 +83,10 @@ export const skills: Record<Locale, {
       ]},
     ],
     cvTitle: 'La même chose, sur une page',
-    cvText: 'Mon CV porte cette liste et le reste du parcours. Deux lectures des mêmes faits — seul l’ordre change : l’une met le travail plateforme en tête, l’autre le travail systèmes. Ce sont les versions publiques : mêmes formulations, sans mon numéro de téléphone.',
+    cvText: 'Mon CV porte cette liste et le reste du parcours. C’est la version publique : mêmes formulations, sans mon numéro de téléphone.',
     cvNote: 'Écrit pour un CDI à partir du 16 octobre 2026. Écrivez-moi et je vous envoie la version avec un téléphone.',
     cvTracks: [
       { id: 'platform', label: 'IA plateforme / IA appliquée', fr: 'français (PDF)', en: 'anglais (PDF)' },
-      { id: 'systems', label: 'Logiciel et systèmes', fr: 'français (PDF)', en: 'anglais (PDF)' },
     ],
   },
 };

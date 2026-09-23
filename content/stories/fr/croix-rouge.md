@@ -14,7 +14,7 @@ Avec l’équipe, j’ai construit bénévolement la couche IA de la plateforme,
 
 À ChangeNOW 2025, je suis resté au stand avec l’équipe pour parler du projet avec la Croix-Rouge et les visiteurs, et écouter leurs questions. Une collègue a fait le pitch en anglais sur une petite scène.
 
-Le projet a fini **1er sur 12 équipes** au hackathon IA & Crise, et la plateforme a été utilisée par plus de 50 bénévoles. En juillet 2025, Pierre Ly, chef de l’innovation de la Croix-Rouge, l’a présentée au sommet AI for Good, à Genève, au nom de l’équipe.
+Le projet a fini 1er sur 12 équipes au hackathon IA & Crise, et la plateforme a été utilisée par plus de 50 bénévoles. En juillet 2025, Pierre Ly, chef de l’innovation de la Croix-Rouge, l’a présentée au sommet AI for Good, à Genève, au nom de l’équipe.
 
 Cette expérience réunit deux aspects qui m’intéressent : contribuer à un outil et en discuter directement avec les personnes concernées.
 
