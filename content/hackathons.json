@@ -135,8 +135,8 @@
       "en": "Event page"
     },
     "rank": {
-      "fr": "1re place de track",
-      "en": "Track winner"
+      "fr": "1re place, track Académie de Versailles",
+      "en": "1st place, Académie de Versailles track"
     }
   },
   {
@@ -146,18 +146,22 @@
     "project": null,
     "fr": {
       "context": "Défense · transmissions",
-      "contribution": "Projet d’équipe sur un sujet de transmissions ; détails techniques non publiés.",
+      "contribution": "Projet d’équipe : un prototype embarqué sur un sujet de transmissions ; détails techniques non publiés.",
       "outcome": "Concept retenu pour la suite du développement."
     },
     "en": {
       "context": "Defence · communications",
-      "contribution": "Team project on a communications problem; technical details not published.",
+      "contribution": "Team project: an embedded prototype for a communications problem; technical details not published.",
       "outcome": "Concept taken forward for further development."
     },
-    "link": null,
+    "link": {
+      "url": "https://luma.com/wjgbiv3m",
+      "fr": "Page de l’événement",
+      "en": "Event page"
+    },
     "rank": {
-      "fr": "3e sur 25 équipes",
-      "en": "3rd of 25 teams"
+      "fr": "3e sur 20 équipes",
+      "en": "3rd of 20 teams"
     }
   },
   {

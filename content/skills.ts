@@ -40,7 +40,8 @@ export const skills: Record<Locale, {
       { id: 'applied-ai', title: 'Applied AI', items: [
         { name: 'Function-calling agents', proof: 'droit-de-retard — the model extracts, an allow-list decides, Python computes', href: 'projects/droit-de-retard/' },
         { name: 'Offline evals and deterministic tests', proof: 'droit-de-retard — 120+ offline tests, evaluation scope written down in the repository', href: 'projects/droit-de-retard/' },
-        { name: 'RAG (retrieval-augmented generation)', proof: 'French Red Cross — the AI layer of a first-aid training platform: retrieval over a 700-page manual and a Socratic coach; code kept inside the Red Cross' },
+        { name: 'RAG', proof: 'French Red Cross — the AI layer of a first-aid training platform: retrieval over a 700-page manual and a Socratic coach; code kept inside the Red Cross' },
+        { name: 'vLLM', proof: 'Paris Gemma 4 Hackathon — used on the team project', href: 'hackathons/#gemma' },
         { name: 'Ollama', proof: 'droit-de-retard — a local-first agent, tested with no network', href: 'projects/droit-de-retard/' },
         { name: 'FastAPI', proof: 'Diary — recording, FFmpeg conversion and the weekly-report workflow', href: 'projects/diary/' },
       ]},
@@ -77,7 +78,8 @@ export const skills: Record<Locale, {
       { id: 'ia-appliquee', title: 'IA appliquée', items: [
         { name: 'Agents avec function calling', proof: 'droit-de-retard — le modèle extrait, une liste blanche décide, Python calcule', href: 'projects/droit-de-retard/' },
         { name: 'Évaluations hors ligne et tests déterministes', proof: 'droit-de-retard — plus de 120 tests hors ligne, périmètre d’évaluation écrit dans le dépôt', href: 'projects/droit-de-retard/' },
-        { name: 'RAG (retrieval-augmented generation)', proof: 'Croix-Rouge française — la couche IA d’une plateforme de formation des secouristes : récupération sur un manuel de 700 pages et coach socratique ; code interne à la Croix-Rouge' },
+        { name: 'RAG', proof: 'Croix-Rouge française — la couche IA d’une plateforme de formation des secouristes : récupération sur un manuel de 700 pages et coach socratique ; code interne à la Croix-Rouge' },
+        { name: 'vLLM', proof: 'Paris Gemma 4 Hackathon — utilisé sur le projet d’équipe', href: 'hackathons/#gemma' },
         { name: 'Ollama', proof: 'droit-de-retard — un agent local-first, testé sans réseau', href: 'projects/droit-de-retard/' },
         { name: 'FastAPI', proof: 'Diary — enregistrement, conversion FFmpeg et parcours de rapport hebdomadaire', href: 'projects/diary/' },
       ]},
