@@ -50,7 +50,7 @@ export const skills: Record<Locale, {
     cvText: 'My CV holds this list and the rest of the story. This is the public copy: identical wording, without my phone number.',
     cvNote: 'Written for a permanent role from 16 October 2026. Write to me and I will send the version with a phone number.',
     cvTracks: [
-      { id: 'platform', label: 'AI Platform / Applied AI', fr: 'French (PDF)', en: 'English (PDF)' },
+      { id: 'platform', label: 'Applied AI', fr: 'French (PDF)', en: 'English (PDF)' },
     ],
   },
   fr: {
