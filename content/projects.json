@@ -61,7 +61,7 @@
     "upstream": "https://github.com/copeugne/CroixRouge-Hackathon",
     "story": "croix-rouge",
     "fr": {
-      "summary": "Plateforme collective de formation aux premiers secours, 1re sur 12 équipes à IA & Crise, utilisée par plus de 50 bénévoles, présentée à ChangeNOW et au sommet AI for Good (2025).",
+      "summary": "Plateforme collective de formation aux premiers secours, 1re sur 12 équipes à IA & Crise, testée auprès d’environ 50 secouristes, présentée à ChangeNOW et au sommet AI for Good (2025).",
       "role": "Bénévolat : couche IA construite avec l’équipe — RAG sur un manuel de 700 pages et coach socratique. Ce code est resté interne à la Croix-Rouge ; le dépôt est un fork du projet collectif.",
       "status": "Projet collectif présenté publiquement",
       "tags": [
@@ -70,7 +70,7 @@
       ]
     },
     "en": {
-      "summary": "A collective first-aid training platform, 1st of 12 teams at IA & Crise, used by 50+ volunteers, shown at ChangeNOW and the AI for Good summit (2025).",
+      "summary": "A collective first-aid training platform, 1st of 12 teams at IA & Crise, tested with about 50 first-aiders, shown at ChangeNOW and the AI for Good summit (2025).",
       "role": "Volunteer: built the AI layer with the team — RAG over a 700-page manual and a Socratic coach. That code stayed inside the Red Cross; the repository is a fork of the team project.",
       "status": "Team project presented publicly",
       "tags": [

@@ -101,12 +101,12 @@
     "fr": {
       "context": "Formation aux premiers secours",
       "contribution": "Couche IA construite avec l’équipe, en bénévole : RAG sur un manuel de 700 pages et coach socratique.",
-      "outcome": "Plateforme utilisée par plus de 50 bénévoles, présentée à ChangeNOW puis au sommet AI for Good (2025) ; au salon ChangeNOW, échanges avec les visiteurs au stand Croix-Rouge."
+      "outcome": "Plateforme testée auprès d’environ 50 secouristes, présentée à ChangeNOW puis au sommet AI for Good (2025) ; au salon ChangeNOW, échanges avec les visiteurs au stand Croix-Rouge."
     },
     "en": {
       "context": "First-aid training",
       "contribution": "Volunteer: built the AI layer with the team — RAG over a 700-page manual and a Socratic coach.",
-      "outcome": "Platform used by 50+ volunteers, presented at ChangeNOW and at the AI for Good summit (2025); at ChangeNOW, conversations with visitors at the Red Cross stand."
+      "outcome": "Platform tested with about 50 first-aiders, presented at ChangeNOW and at the AI for Good summit (2025); at ChangeNOW, conversations with visitors at the Red Cross stand."
     },
     "link": null,
     "rank": {
