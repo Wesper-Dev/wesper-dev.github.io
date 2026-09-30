@@ -100,12 +100,12 @@
     "project": "croix-rouge",
     "fr": {
       "context": "Formation aux premiers secours",
-      "contribution": "Couche IA construite avec l’équipe, en bénévole : RAG sur un manuel de 700 pages et coach socratique.",
+      "contribution": "Front et fonctionnalités d’un chatbot pour secouristes, RAG co-construit sur un manuel de 700 pages ; puis six mois de bénévolat en équipe sur l’application.",
       "outcome": "Plateforme testée auprès d’environ 50 secouristes, présentée à ChangeNOW puis au sommet AI for Good (2025) ; au salon ChangeNOW, échanges avec les visiteurs au stand Croix-Rouge."
     },
     "en": {
       "context": "First-aid training",
-      "contribution": "Volunteer: built the AI layer with the team — RAG over a 700-page manual and a Socratic coach.",
+      "contribution": "Front end and features of a chatbot for first-aiders, RAG co-built over a 700-page manual; then six months of volunteer work on the app with the team.",
       "outcome": "Platform tested with about 50 first-aiders, presented at ChangeNOW and at the AI for Good summit (2025); at ChangeNOW, conversations with visitors at the Red Cross stand."
     },
     "link": null,
@@ -121,12 +121,12 @@
     "project": null,
     "fr": {
       "context": "Femmes et sciences · track de l’Académie de Versailles",
-      "contribution": "En équipe de quatre : une web app pour promouvoir les femmes dans le milieu scientifique — témoignages de femmes scientifiques, et des jeux qui font essayer aux filles des activités d’ordinaire plus pratiquées par les garçons.",
+      "contribution": "En équipe de quatre : une web app pour promouvoir les femmes dans le milieu scientifique, avec des témoignages de femmes scientifiques et des jeux qui font essayer aux filles des activités d’ordinaire plus pratiquées par les garçons.",
       "outcome": "Track de l’Académie de Versailles remportée par l’équipe."
     },
     "en": {
       "context": "Women in science · Académie de Versailles track",
-      "contribution": "In a team of four: a web app promoting women in science — testimonies from women scientists, and games that let girls try activities more often done by boys.",
+      "contribution": "In a team of four: a web app promoting women in science, with testimonies from women scientists and games that let girls try activities more often done by boys.",
       "outcome": "The team won the Académie de Versailles track."
     },
     "link": {

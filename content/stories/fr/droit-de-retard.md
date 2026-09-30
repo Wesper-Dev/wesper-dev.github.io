@@ -1,4 +1,4 @@
-# Droit de Retard — garder les décisions explicites
+# Droit de Retard : garder les décisions explicites
 
 Un prototype local-first qui prépare un brouillon de réclamation aérienne à partir de documents de voyage.
 

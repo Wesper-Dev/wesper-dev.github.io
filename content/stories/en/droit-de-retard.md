@@ -1,4 +1,4 @@
-# Droit de Retard — keeping decisions explicit
+# Droit de Retard: keeping decisions explicit
 
 A local-first prototype that prepares a draft flight-compensation claim from travel documents.
 

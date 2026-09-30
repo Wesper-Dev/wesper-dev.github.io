@@ -1,4 +1,4 @@
-# Diary / Kura — suivre le chemin d’un enregistrement
+# Diary / Kura : suivre le chemin d’un enregistrement
 
 Un journal vocal, depuis le navigateur jusqu’aux rapports hebdomadaires.
 

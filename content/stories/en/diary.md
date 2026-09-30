@@ -1,4 +1,4 @@
-# Diary / Kura — following a recording through the system
+# Diary / Kura: following a recording through the system
 
 A voice journal, from the browser to weekly reports.
 
