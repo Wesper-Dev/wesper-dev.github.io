@@ -22,7 +22,7 @@ Cette expérience réunit deux aspects qui m’intéressent : contribuer à un o
 
 ## Résultat et limites
 
-La plateforme collective a été présentée publiquement. Le code développé après le hackathon est resté interne à la Croix-Rouge : mon fork public montre le logiciel du hackathon, pas ce code. Aucun résultat pédagogique mesuré n’est revendiqué.
+La plateforme collective a été présentée publiquement. Mon fork public montre une partie du code de l’équipe, jusqu’en mai 2025, commité depuis un poste partagé ; le reste du travail est resté interne à la Croix-Rouge. Aucun résultat pédagogique mesuré n’est revendiqué.
 
 ## Liens et crédits
 

@@ -62,7 +62,7 @@
     "story": "croix-rouge",
     "fr": {
       "summary": "Plateforme collective de formation aux premiers secours, 1re sur 12 équipes à IA & Crise, testée auprès d’environ 50 secouristes, présentée à ChangeNOW et au sommet AI for Good (2025).",
-      "role": "Bénévolat : front et RAG du chatbot au hackathon (manuel de 700 pages), puis six mois en équipe sur l’application : front, back, flashcards, aide sur le coach socratique. Ce code est resté interne à la Croix-Rouge ; le dépôt est un fork du projet du hackathon.",
+      "role": "Bénévolat : front et RAG du chatbot au hackathon (manuel de 700 pages), puis six mois en équipe sur l’application : front, back, flashcards, aide sur le coach socratique. Le dépôt public montre une partie du code de l’équipe, jusqu’en mai 2025 ; le reste est resté interne à la Croix-Rouge.",
       "status": "Projet collectif présenté publiquement",
       "tags": [
         "IA",
@@ -71,7 +71,7 @@
     },
     "en": {
       "summary": "A collective first-aid training platform, 1st of 12 teams at IA & Crise, tested with about 50 first-aiders, shown at ChangeNOW and the AI for Good summit (2025).",
-      "role": "Volunteer: the chatbot’s front end and RAG at the hackathon (700-page manual), then six months on the app with the team: front end, back end, flashcards, help on the Socratic coach. That code stayed inside the Red Cross; the repository is a fork of the hackathon project.",
+      "role": "Volunteer: the chatbot’s front end and RAG at the hackathon (700-page manual), then six months on the app with the team: front end, back end, flashcards, help on the Socratic coach. The public repository shows part of the team’s code, up to May 2025; the rest stayed inside the Red Cross.",
       "status": "Team project presented publicly",
       "tags": [
         "AI",

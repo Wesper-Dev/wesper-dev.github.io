@@ -22,7 +22,7 @@ The experience combines two things I enjoy: contributing to a tool and discussin
 
 ## Result and limitations
 
-The team platform was presented publicly. The code written after the hackathon stayed inside the Red Cross: my public fork shows the hackathon software, not that code. No measured educational outcome is claimed.
+The team platform was presented publicly. My public fork shows part of the team’s code, up to May 2025, committed from a shared machine; the rest of the work stayed inside the Red Cross. No measured educational outcome is claimed.
 
 ## Links and credits
 
