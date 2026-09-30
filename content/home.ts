@@ -4,8 +4,8 @@ export const home = {
   en: {
     nav: ['Projects', 'Hackathons', 'Skills', 'About'], contact: 'Say hello',
     eyebrow: 'Arnaud Durand · Paris, France', title: 'Useful AI tools', titleEnd: 'that actually run.',
-    intro: "I run LLM tools inside companies, instrument them and isolate what agents execute. Systems foundations from 42; agents tested offline.",
-    role: 'Applied AI Engineer', availability: 'Looking for a permanent role after 16 October 2026',
+    intro: "In two banks, I have deployed and instrumented LLM tools and isolated what agents execute. Systems foundations from 42; agents tested offline.",
+    role: 'Applied AI Engineer', availability: 'Looking for a permanent role from 16 October 2026',
     selected: 'A few things I’ve built', selectedNote: 'Ideas explored in teams, then taken a little further.',
     code: 'Explore the repository', screenshot: 'Droit de Retard · demo interface from the public repository',
     projects: projects.filter(p=>p.story).map(p=>({name:p.name,category:p.en.tags.join(' · '),text:p.en.summary,role:p.en.role,url:p.repo,id:p.id})),
@@ -17,14 +17,14 @@ export const home = {
     aboutTitle:'There’s more to it than code.',
     aboutIntro:'I enjoy learning with other people. That takes different forms: organising a developer talk, coaching a training session, or listening to a debate that changes how I see a problem.',
     communities:[{name:'GDG on Campus 42 Paris',tag:'Organise & share',text:'I co-organise the chapter: two events of 100+ attendees, including a talk on Gemini with Laurent Picard from Google (July 2026).',url:'https://gdg.community.dev/gdg-on-campus-42-paris-paris-france/'},{name:'Fitness 42',tag:'Train & encourage',text:'Coach for 3+ years, one of three coaches of a 300+ member community: 15+ fitness sessions led, 15–20 people per session on average.',url:''},{name:'CITOY.ENS',tag:'Listen & question',text:'Conferences and debates. I attend talks and have suggested speakers to the association.',url:'https://citoyens-website.cdn.dgnum.eu/'}],
-    path:'Along the way', experiences:[['2026','BPCE','AI platform internship · the sandbox of an internal agent runtime'],['2025–2026','BNP Paribas','Data Scientist internship · 75+ containers, LLM observability, a React app'],['2019–2026','École 42 Paris','Learning through software projects']],
+    path:'Along the way', experiences:[['2026','BPCE','AI platform internship · the sandbox of an internal agent runtime'],['2025–2026','BNP Paribas','Data Scientist internship · a React app released to production, a 75+ container host, Langfuse'],['2019–2026','École 42 Paris','Learning through software projects']],
     endTitle:'Something worth building?', endText:'I’m looking for a permanent role in applied AI or AI platforms, and I’m open to freelance work. I also like collaborating on projects, open source especially, and I’m always up for a hackathon. French native; English fluent; Spanish B1.', mail:'Let’s talk', footer:'Made in Paris.', skip:'Skip to content'
   },
   fr: {
     nav:['Projets','Hackathons','Compétences','À propos'], contact:'Échangeons',
     eyebrow:'Arnaud Durand · Paris, France', title:'Des outils IA utiles,', titleEnd:'qui tournent vraiment.',
-    intro:'Je fais tourner des outils LLM en entreprise, je les instrumente et j’isole ce que les agents exécutent. Une base systèmes acquise à 42 ; des agents testés hors ligne.',
-    role:'Applied AI Engineer', availability:'À la recherche d’un CDI après le 16 octobre 2026',
+    intro:'Dans deux banques, j’ai déployé et instrumenté des outils LLM, et isolé ce que les agents exécutent. Une base systèmes acquise à 42 ; des agents testés hors ligne.',
+    role:'Applied AI Engineer', availability:'À la recherche d’un CDI à partir du 16 octobre 2026',
     selected:'Quelques projets en chemin',selectedNote:'Des idées explorées en équipe, puis prolongées.',
     code:'Explorer le dépôt', screenshot:'Droit de Retard · interface de démonstration du dépôt public',
     projects: projects.filter(p=>p.story).map(p=>({name:p.name,category:p.fr.tags.join(' · '),text:p.fr.summary,role:p.fr.role,url:p.repo,id:p.id})),
@@ -33,7 +33,7 @@ export const home = {
     hackTitle:'Des rencontres. Des problèmes nouveaux.',hackIntro:'Les hackathons me permettent de rencontrer des gens et d’explorer des terrains inconnus. Certaines idées deviennent des projets au long cours ; d’autres restent des expériences.',hackMore:'Quelques explorations en équipe',
     aboutTitle:'Il n’y a pas que le code.',aboutIntro:'J’aime apprendre avec les autres. Cela peut prendre la forme d’un événement développeur, d’une séance de coaching ou d’un débat qui change ma façon de regarder un problème.',
     communities:[{name:'GDG on Campus 42 Paris',tag:'Organiser et partager',text:'Je co-organise le chapitre : deux événements de plus de 100 personnes, dont un talk sur Gemini avec Laurent Picard, de Google (juillet 2026).',url:'https://gdg.community.dev/gdg-on-campus-42-paris-paris-france/'},{name:'Fitness 42',tag:'S’entraîner et encourager',text:'Coach depuis plus de 3 ans, l’un des trois coachs d’une communauté de plus de 300 membres : plus de 15 séances de fitness données, 15 à 20 personnes par séance en moyenne.',url:''},{name:'CITOY.ENS',tag:'Écouter et questionner',text:'Des conférences et des débats. J’assiste aux rencontres et j’ai proposé des intervenants à l’association.',url:'https://citoyens-website.cdn.dgnum.eu/'}],
-    path:'Au fil du parcours',experiences:[['2026','BPCE','Stage plateforme IA · la sandbox d’un runtime d’agents interne'],['2025–2026','BNP Paribas','Stage Data Scientist · plus de 75 conteneurs, observabilité LLM, une application React'],['2019–2026','École 42 Paris','Apprendre par les projets logiciels']],
+    path:'Au fil du parcours',experiences:[['2026','BPCE','Ingénierie plateforme IA (stage) · la sandbox d’un runtime d’agents interne'],['2025–2026','BNP Paribas','Data Scientist (stage) · une application React mise en production, un hôte de 75+ conteneurs, Langfuse'],['2019–2026','École 42 Paris','Apprendre par les projets logiciels']],
     endTitle:'Une idée à construire ?',endText:'Je cherche un CDI en IA appliquée ou plateforme IA, et je reste ouvert aux missions freelance. J’aime aussi collaborer sur des projets, open source en particulier, et je réponds présent aux hackathons. Français langue maternelle ; anglais courant ; espagnol B1.',mail:'Parlons-en',footer:'Fait à Paris.',skip:'Aller au contenu'
   }
 };

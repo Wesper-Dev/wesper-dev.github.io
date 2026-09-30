@@ -18,7 +18,7 @@ export const skills: Record<Locale, {
   en: {
     eyebrow: 'What I work with',
     title: 'Skills',
-    intro: 'The same list as my CV, in text rather than in a picture, so a person or a machine can read it. Each line says where it was actually used.',
+    intro: 'The skills from my CV, in text rather than in a picture, so a person or a machine can read it. Each line says where it was actually used.',
     note: 'Levels are deliberately absent. What is written here is what I have used on a project or at work; the link next to it is where you can check.',
     proofLabel: 'Where it was used',
     groups: [
@@ -32,8 +32,9 @@ export const skills: Record<Locale, {
       ]},
       { id: 'platform', title: 'Platform', items: [
         { name: 'Linux', proof: 'BNP Paribas: administered the host of the team’s internal LLM tools, in staging' },
-        { name: 'Docker', proof: 'BNP Paribas: 75+ containers running the chat interface and inference gateway' },
-        { name: 'Kubernetes', proof: 'BPCE: Kubernetes architecture for scaling an internal agent runtime' },
+        { name: 'Docker', proof: 'BNP Paribas: the staging host for about 15 of the team’s LLM PoCs (75+ containers)' },
+        { name: 'Kubernetes', proof: 'BPCE: contributing to the Kubernetes architecture of an internal agent runtime, with the infrastructure team' },
+        { name: 'Git', proof: 'Every public repository here; this site goes through pull requests before reaching main', href: repo('wesper-dev.github.io') },
         { name: 'CI/CD', proof: 'This site: pull requests checked and main deployed after a successful build', href: repo('wesper-dev.github.io') },
         { name: 'Langfuse', proof: 'BNP Paribas: on-premise LLM observability (traces, cost, performance) and a tutorial for the team' },
       ]},
@@ -55,7 +56,7 @@ export const skills: Record<Locale, {
   fr: {
     eyebrow: 'Ce avec quoi je travaille',
     title: 'Compétences',
-    intro: 'La même liste que mon CV, en texte plutôt qu’en image, pour qu’une personne comme une machine puisse la lire. Chaque ligne dit où cela a réellement servi.',
+    intro: 'Les compétences de mon CV, en texte plutôt qu’en image, pour qu’une personne comme une machine puisse la lire. Chaque ligne dit où cela a réellement servi.',
     note: 'Les niveaux sont volontairement absents. Ce qui est écrit ici, je m’en suis servi sur un projet ou au travail ; le lien à côté indique où le vérifier.',
     proofLabel: 'Où cela a servi',
     groups: [
@@ -69,8 +70,9 @@ export const skills: Record<Locale, {
       ]},
       { id: 'plateforme', title: 'Plateforme', items: [
         { name: 'Linux', proof: 'BNP Paribas : administration, en staging, de l’hôte des outils LLM internes de l’équipe' },
-        { name: 'Docker', proof: 'BNP Paribas : plus de 75 conteneurs pour l’interface de chat et la passerelle d’inférence' },
-        { name: 'Kubernetes', proof: 'BPCE : architecture Kubernetes pour le passage à l’échelle d’un runtime d’agents interne' },
+        { name: 'Docker', proof: 'BNP Paribas : l’hôte de staging d’environ 15 POC LLM de l’équipe (plus de 75 conteneurs)' },
+        { name: 'Kubernetes', proof: 'BPCE : contribution à l’architecture Kubernetes d’un runtime d’agents interne, avec l’équipe infra' },
+        { name: 'Git', proof: 'Tous les dépôts publics cités ici ; ce site passe par des pull requests avant d’arriver sur main', href: repo('wesper-dev.github.io') },
         { name: 'CI/CD', proof: 'Ce site : les pull requests sont contrôlées et main déployé après un build réussi', href: repo('wesper-dev.github.io') },
         { name: 'Langfuse', proof: 'BNP Paribas : observabilité LLM on-premise (traces, coûts, performances) et un tutoriel pour l’équipe' },
       ]},
