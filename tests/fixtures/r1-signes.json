@@ -1,0 +1,27 @@
+{
+ "commit": "5afd274",
+ "commande": "depuis site/ : npm run build, puis node --experimental-strip-types tests/fixtures/figer-r1-signes.ts dist/client 5afd274",
+ "pages": {
+  "/": 0,
+  "/fr/": 15,
+  "/projects/": 0,
+  "/fr/projects/": 12,
+  "/hackathons/": 0,
+  "/fr/hackathons/": 16,
+  "/skills/": 0,
+  "/fr/skills/": 23,
+  "/projects/droit-de-retard/": 0,
+  "/fr/projects/droit-de-retard/": 14,
+  "/projects/diary/": 0,
+  "/fr/projects/diary/": 10,
+  "/projects/croix-rouge/": 0,
+  "/fr/projects/croix-rouge/": 12,
+  "/experiences/bnp-paribas/": 0,
+  "/fr/experiences/bnp-paribas/": 5,
+  "/experiences/bpce/": 0,
+  "/fr/experiences/bpce/": 4,
+  "/experiences/ecole-42/": 0,
+  "/fr/experiences/ecole-42/": 4,
+  "/404.html": 0
+ }
+}

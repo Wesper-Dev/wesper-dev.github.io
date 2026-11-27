@@ -1,0 +1,44 @@
+{
+  "commit": "6d9e441",
+  "commande": "cp -c -R site <tmp>/ref/site (au commit 6d9e441, arbre propre) ; cd <tmp>/ref/site ; rm -rf dist ; npm run build ; cp -R dist/client <tmp>/ref/dist-preview ; SITE_PUBLIC=1 npm run build ; cp -R dist/client <tmp>/ref/dist-public ; depuis site/ du dépôt : node --experimental-strip-types tests/fixtures/figer-reference-6d9e441.ts --preview <tmp>/ref/dist-preview --public <tmp>/ref/dist-public. Normalisation : tests/helpers-2b.ts (normalizedDocument, neutralizeHome).",
+  "pages": {
+    "preview": {
+      "/": "209301bc5c85fc567ecd2eaf8da1c88efc6f3d26ea8cfe877ee38055af4bae52",
+      "/fr/": "38260811dd7ecea815672c60cbcc436ebd42bbb1ccf029cfefc26dcd116439ea",
+      "/projects/": "dcbbfa559984889733381f8a5c2865fcf25a22e42a841c76c94813661410dfec",
+      "/fr/projects/": "ba91cafc17880c7ca3f86a2573ffdd369c6fa374fc9c39e15493a6b9f7ed6a5c",
+      "/hackathons/": "3cab81170a5b72a6450a6460050aa967b3dda609caee6b8f396a66b232a7d5d4",
+      "/fr/hackathons/": "872300332994dedd5f35740d5dcacf114bf32caddf9cb8c9c4cfdb1f169d3a13",
+      "/skills/": "cfebbd9811f4a2fedcda529286ee3ca6541c033e50a7f4e4d51943a90e95812f",
+      "/fr/skills/": "941fc9164c72dcd6b5ef94dbf4a2b125591f6c0f973a58528be060aef46ff800",
+      "/projects/droit-de-retard/": "ac161b9ea7daa73741e48260eda79679ad9a3a3484786ffd33c2e815a9953dd1",
+      "/fr/projects/droit-de-retard/": "d4440eb2a07833d49a3ee2801b7ef7de30023bb0784673a836508430bc648a86",
+      "/projects/diary/": "473df8af6606116acea284b364b51a44b0eeed7360d1eca35bdd2ae64b66fd17",
+      "/fr/projects/diary/": "efd66ba208a72192f53a1cb53e1ab2027cd01b0bbbd277693cf4001e95641422",
+      "/projects/croix-rouge/": "e9054b5b292f3269d608ad741cfd992c1a9569e5cff11090cb3c68031ae21b62",
+      "/fr/projects/croix-rouge/": "e9eafbf97bf1d1d9a1d46436c3515c576d9c31b9c9313d313d108df4e1a39f8e",
+      "/experiences/bnp-paribas/": "63edef5822950d9744d3e6f057a8a43481893ac2baf9568d0ee76966fd190b41",
+      "/fr/experiences/bnp-paribas/": "edc6da0ba0d49d38e21295fdba347d1da7b7d7cb89aa16b1176e9de45c934972",
+      "/404.html": "50fe0e7bec389571af1ee3c7cd4f7bfbc1013c79a94e964d38e724782bd8de46"
+    },
+    "public": {
+      "/": "c886326f693b1b5c3c9fcadf1cee5e3b1c88e1c05417ece019c543a9e14c5660",
+      "/fr/": "bebdf5972fd4b95a29712791da66e5736948f4f1002c578ae94aba6aaa1c320d",
+      "/projects/": "e0d91503518735530d073e09ed4c1bed3756a2481038c2f72574fdc043eba396",
+      "/fr/projects/": "35bbb14967406b1649cffbef3f739260fba300aa0a083b190864ba8ef92869b5",
+      "/hackathons/": "ee217604f7481ff4e57691f5eb452bae68df095f74a812cbbb14ecaed991c281",
+      "/fr/hackathons/": "4e711b8cfaeb57b76f0235f034eccc6bee743f3eed6540572686b3c7f6582869",
+      "/skills/": "4e7fb0996f826d26d9e85e53e73ceb7579c4c91fd7481c9d9555cc679f61146f",
+      "/fr/skills/": "2cf3e4f58f1e3f5c882f4138a788fd4f4273b4f6cc8273f9a870c20b57bf1326",
+      "/projects/droit-de-retard/": "36c878eadd69157e3d9fd696ca7d1e82e43a50d536fc34177f3aa940f3b1bf92",
+      "/fr/projects/droit-de-retard/": "414f970c31eb4c80ad405f6c092d4a82013bc1e040f85ecd9be3972baae7d1bf",
+      "/projects/diary/": "66006f9bbab2485c6beac16fe6d953b0fba9bd26e1bfba7f145a0a1b6c34c127",
+      "/fr/projects/diary/": "955a25da11da56c78da7d7dbdb35d0565eaa42f6bf57381f40befdf290e52544",
+      "/projects/croix-rouge/": "14775a944a29e8fed45573fa3c5061c36cd07625b0735fa08be4a449033e8e1e",
+      "/fr/projects/croix-rouge/": "adf3abeab2bff89bb052aba8f18a53d4fd38a69ca603dd6f221fb2f43526583a",
+      "/experiences/bnp-paribas/": "f9d4d6b1616bdf1685d115d64960eb3d14a0e93343613784752082fdd135c9ef",
+      "/fr/experiences/bnp-paribas/": "e3eb7760461c9e253f44acc762712539169cd43c033286acbb754cdac2867cb2",
+      "/404.html": "50fe0e7bec389571af1ee3c7cd4f7bfbc1013c79a94e964d38e724782bd8de46"
+    }
+  }
+}

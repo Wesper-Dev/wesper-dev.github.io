@@ -1,0 +1,202 @@
+{
+ "_lisezMoi": "Phrases de la FAQ marquées « reprise mot pour mot » dans tmp/refonte-arbre/textes-lot6.md §4.1 et §4.2 (identifiants du brouillon), liées à leur source par le CONTENU, pas par un numéro de ligne. Contrat lot 6a, V6 : chaque texte figure dans site/content/faq.json (langue lang) et dans chacune de ses sources, blancs et apostrophes près ; pointAjoute : la source n'a pas le point final (libellé de tableau devenu phrase, FAITS §7). Les questions QE1, QE2 et les phrases « reformulée » n'y sont pas. Si une phrase reprise change, ce fichier change avec elle, explicitement. Tour Z (25/11/2026, tmp/refonte-arbre/contrat-textes-z.md) : RF1 et RE1 suivent « validé pour la production par le comité de pilotage » (Z1) ; RF3 et RE3 perdent la phrase « Ce POC ne tournait pas en production. » (Z2) ; QF1 (question changée, sans source versionnée : PLAN.md garde l'ancienne), LF3, LE3, LF5 et LE5 (libellés de lien Z3, sans source) sont retirés.",
+ "reprises": [
+  {
+   "id": "QF2",
+   "lang": "fr",
+   "texte": "Où consulter le code de droit-de-retard et reproduire son évaluation ?",
+   "sources": [
+    "deliverables/refonte-arbre/PLAN.md",
+    "deliverables/refonte-arbre/FAITS.md"
+   ]
+  },
+  {
+   "id": "RF1",
+   "lang": "fr",
+   "texte": "Chez BNP Paribas, j'ai développé en binôme un outil d'analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d'un rapport est passé de 3–5 à 1–3 minutes.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "LF1",
+   "lang": "fr",
+   "texte": "Lire le cas BNP Paribas",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "RF2b",
+   "lang": "fr",
+   "texte": "Le dépôt contient une documentation d’évaluation, des commandes de reproduction et des exemples de sortie.",
+   "sources": [
+    "site/content/stories/fr/droit-de-retard.md"
+   ]
+  },
+  {
+   "id": "RF2c",
+   "lang": "fr",
+   "texte": "Plus de 120 tests hors ligne.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md"
+   ]
+  },
+  {
+   "id": "LF2b",
+   "lang": "fr",
+   "texte": "documentation d’évaluation",
+   "sources": [
+    "site/content/stories/fr/droit-de-retard.md"
+   ]
+  },
+  {
+   "id": "RF3",
+   "lang": "fr",
+   "texte": "J'ai conçu la sandbox Docker d'un POC de runtime d'agents, selon les contraintes visées en production : exécution non root, réseau en liste blanche ; j'ai contribué avec l'équipe infra à son architecture Kubernetes.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "RF4a",
+   "lang": "fr",
+   "texte": "Au hackathon, j'ai développé le front et les fonctionnalités d'un chatbot pour secouristes et co-construit son RAG sur un manuel de 700 pages ; pendant six mois, en équipe, j'ai travaillé sur le front et le back de l'application, les flashcards et une contribution au coach socratique.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md"
+   ]
+  },
+  {
+   "id": "LF4",
+   "lang": "fr",
+   "texte": "Lire le récit",
+   "sources": [
+    "site/content/home-ui.ts"
+   ]
+  },
+  {
+   "id": "RF5a",
+   "lang": "fr",
+   "texte": "École 42 Paris, 2019–2026",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md"
+   ]
+  },
+  {
+   "id": "RF5b",
+   "lang": "fr",
+   "texte": "Un cursus par projets : C/C++, UNIX/POSIX, concurrence. Minishell, un shell en C (pipes, redirections, processus) ; Inception, une infrastructure Docker (NGINX, WordPress, MariaDB).",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "RF6a",
+   "lang": "fr",
+   "texte": "Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ],
+   "pointAjoute": true
+  },
+  {
+   "id": "RE1",
+   "lang": "en",
+   "texte": "At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "LE1",
+   "lang": "en",
+   "texte": "Read the BNP Paribas case",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "RE2b",
+   "lang": "en",
+   "texte": "The repository includes evaluation documentation, reproduction commands and example outputs.",
+   "sources": [
+    "site/content/stories/en/droit-de-retard.md"
+   ]
+  },
+  {
+   "id": "RE2c",
+   "lang": "en",
+   "texte": "More than 120 offline tests.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md"
+   ]
+  },
+  {
+   "id": "LE2b",
+   "lang": "en",
+   "texte": "evaluation documentation",
+   "sources": [
+    "site/content/stories/en/droit-de-retard.md"
+   ]
+  },
+  {
+   "id": "RE3",
+   "lang": "en",
+   "texte": "I designed the Docker sandbox for an agent-runtime PoC with future production security requirements in mind: non-root execution and allow-listed network access; I contributed to its Kubernetes design with the infrastructure team.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "RE4a",
+   "lang": "en",
+   "texte": "At the hackathon, I built the front end and features of a chatbot for first-aiders and co-built its RAG over a 700-page manual; over six months, with the team, I worked on the app's front and back end and the flashcards, and contributed to the Socratic coach.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md"
+   ]
+  },
+  {
+   "id": "LE4",
+   "lang": "en",
+   "texte": "Read the story",
+   "sources": [
+    "site/content/home-ui.ts"
+   ]
+  },
+  {
+   "id": "RE5a",
+   "lang": "en",
+   "texte": "École 42 Paris, 2019–2026",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md"
+   ]
+  },
+  {
+   "id": "RE5b",
+   "lang": "en",
+   "texte": "A project-based curriculum: C/C++, UNIX/POSIX, concurrency. Minishell, a shell in C (pipes, redirections, processes); Inception, a Docker infrastructure (NGINX, WordPress, MariaDB).",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ]
+  },
+  {
+   "id": "RE6a",
+   "lang": "en",
+   "texte": "Available now — permanent role; open to freelance and open-source projects.",
+   "sources": [
+    "deliverables/refonte-arbre/FAITS.md",
+    "site/content/experiences.ts"
+   ],
+   "pointAjoute": true
+  }
+ ]
+}

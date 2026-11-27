@@ -1,0 +1,14 @@
+{
+ "palette": "foret",
+ "seed": 7,
+ "images": [
+  {
+   "image": "og-arbre-en.jpg",
+   "sha256": "2867e581352f84ab854e638ba2a6737e67293b361933a033da23ddc43a4d6da4"
+  },
+  {
+   "image": "og-arbre-fr.jpg",
+   "sha256": "62c7b9167cd5bf7f2424ebbf4a18161a1ba9c9175afbdd7ef625284e332fb4f7"
+  }
+ ]
+}

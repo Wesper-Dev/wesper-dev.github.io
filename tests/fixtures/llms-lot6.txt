@@ -1,0 +1,60 @@
+# Arnaud Durand
+
+> Software Engineer. At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes. Available now — permanent role; open to freelance and open-source projects.
+>
+> Ingénieur logiciel. Chez BNP Paribas, j’ai développé en binôme un outil d’analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d’un rapport est passé de 3–5 à 1–3 minutes. Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source.
+
+Each page exists in English and in French; the English pages are listed first. Chaque page existe en anglais et en français ; les pages françaises suivent.
+
+## Experiences (English)
+
+- [BNP Paribas](https://wesper-dev.github.io/experiences/bnp-paribas/): At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes.
+- [BPCE](https://wesper-dev.github.io/experiences/bpce/): I designed the Docker sandbox for an agent-runtime PoC with future production security requirements in mind: non-root execution and allow-listed network access; I contributed to its Kubernetes design with the infrastructure team. The PoC did not run in production.
+- [École 42 Paris, 2019–2026](https://wesper-dev.github.io/experiences/ecole-42/): A project-based curriculum: C/C++, UNIX/POSIX, concurrency. Minishell, a shell in C (pipes, redirections, processes); Inception, a Docker infrastructure (NGINX, WordPress, MariaDB).
+
+## Projects (English)
+
+- [droit-de-retard](https://wesper-dev.github.io/projects/droit-de-retard/): Prepares a draft flight-delay compensation claim from documents, with explicit validation and calculations in Python. More than 120 offline tests.
+- [Croix-Rouge](https://wesper-dev.github.io/projects/croix-rouge/): A collective first-aid training platform, 1st of 12 teams at IA & Crise, tested with about 50 first-aiders, shown at ChangeNOW and the AI for Good summit (2025).
+- [Diary / Kura](https://wesper-dev.github.io/projects/diary/): Connects browser voice recordings to audio processing, storage and weekly reports. Personal continuation of Kura, a team project developed across two hackathons.
+
+## Pages (English)
+
+- [Home](https://wesper-dev.github.io/): At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes.
+- [Projects](https://wesper-dev.github.io/projects/): A selection of things I’ve built or helped build. Each project includes my role, its current scope and a link to the code.
+- [Hackathons](https://wesper-dev.github.io/hackathons/): Different teams, different problems. A record of experiments, with what we tried, my contribution and where each project ended up.
+- [Skills](https://wesper-dev.github.io/skills/): The skills from my CV, as text rather than an image, so both people and machines can read them. Each line says where it was actually used.
+
+## CV (English)
+
+- [Software Engineer · English (PDF)](https://wesper-dev.github.io/cv/arnaud-durand-cv-platform-en.pdf): Public CV.
+
+## Expériences (français)
+
+- [BNP Paribas](https://wesper-dev.github.io/fr/experiences/bnp-paribas/): Chez BNP Paribas, j’ai développé en binôme un outil d’analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d’un rapport est passé de 3–5 à 1–3 minutes.
+- [BPCE](https://wesper-dev.github.io/fr/experiences/bpce/): J’ai conçu la sandbox Docker d’un POC de runtime d’agents, selon les contraintes visées en production : exécution non root, réseau en liste blanche ; j’ai contribué avec l’équipe infra à son architecture Kubernetes. Ce POC ne tournait pas en production.
+- [École 42 Paris, 2019–2026](https://wesper-dev.github.io/fr/experiences/ecole-42/): Un cursus par projets : C/C++, UNIX/POSIX, concurrence. Minishell, un shell en C (pipes, redirections, processus) ; Inception, une infrastructure Docker (NGINX, WordPress, MariaDB).
+
+## Projets (français)
+
+- [droit-de-retard](https://wesper-dev.github.io/fr/projects/droit-de-retard/): Préparer un brouillon de réclamation aérienne à partir de documents, avec des validations et calculs explicites en Python. Plus de 120 tests hors ligne.
+- [Croix-Rouge](https://wesper-dev.github.io/fr/projects/croix-rouge/): Plateforme collective de formation aux premiers secours, 1re sur 12 équipes à IA & Crise, testée auprès d’environ 50 secouristes, présentée à ChangeNOW et au sommet AI for Good (2025).
+- [Diary / Kura](https://wesper-dev.github.io/fr/projects/diary/): Relier l’enregistrement vocal dans le navigateur au traitement audio, au stockage et aux rapports hebdomadaires. Continuation personnelle de Kura, projet développé en équipe pendant deux hackathons.
+
+## Pages (français)
+
+- [Accueil](https://wesper-dev.github.io/fr/): Chez BNP Paribas, j’ai développé en binôme un outil d’analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d’un rapport est passé de 3–5 à 1–3 minutes.
+- [Projets](https://wesper-dev.github.io/fr/projects/): Une sélection de projets que j’ai construits ou auxquels j’ai contribué. Pour chacun : mon rôle, son périmètre actuel et un lien vers le code.
+- [Hackathons](https://wesper-dev.github.io/fr/hackathons/): Des équipes et des problèmes différents. Un carnet d’expériences : ce que nous avons tenté, ma contribution et la suite de chaque projet.
+- [Compétences](https://wesper-dev.github.io/fr/skills/): Les compétences de mon CV, en texte plutôt qu’en image, pour qu’une personne comme une machine puisse les lire. Chaque ligne dit où cela a réellement servi.
+
+## CV (français)
+
+- [Ingénieur logiciel · français (PDF)](https://wesper-dev.github.io/cv/arnaud-durand-cv-platform-fr.pdf): CV public.
+
+## Optional
+
+- [droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard): my public repository · mon dépôt public
+- [droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard/blob/main/docs/EVALUATION.md): evaluation documentation · documentation d’évaluation
+- [GitHub](https://github.com/Wesper-Dev): Arnaud Durand
+- [LinkedIn](https://www.linkedin.com/in/arnaud-durand42/): Arnaud Durand

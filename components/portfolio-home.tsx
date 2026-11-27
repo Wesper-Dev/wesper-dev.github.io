@@ -1,25 +1,158 @@
-import { home, type Locale } from '../content/home';
-import {Header, Footer, Contact, Arrow, pagePath} from './site-shell';
+// Home page in the new art direction (contract lot 2a): header, tree block, short sections, footer, all inside
+// one [data-home] root that carries the palette tokens. Header and footer are shared with the other pages
+// (site-shell.tsx, lot 4). Texts: content/* (FAITS and texts reused by reference, E3); the few literals
+// below are the existing ones of this file and of site-shell.tsx (E3.2).
+import type { CSSProperties, ReactNode } from 'react';
+import { availability } from '../content/experiences';
+import faq from '../content/faq.json';
 import events from '../content/hackathons.json';
-export default function PortfolioHome({locale}:{locale:Locale}) {
- const t=home[locale]; const fr=locale==='fr';
- return <div lang={locale} className="portfolio">
-  <Header locale={locale}/>
-  <main id="main" className="wrap">
-   <section className="hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}<br/><span>{t.titleEnd}</span></h1><div className="hero-bottom"><p className="intro">{t.intro}</p><div className="hero-aside"><p className="role">{t.role}</p><a className="text-link" href="mailto:arnaud.durand97@gmail.com">{t.contact} <Arrow/></a><p className="availability"><span aria-hidden="true"/>{t.availability}</p></div></div></section>
-   <section id="projects" className="section"><div className="section-heading"><span className="index">01 /</span><div><h2>{t.selected}</h2><p>{t.selectedNote}</p></div></div>
-    <article className="featured"><div className="project-copy"><p className="eyebrow">{t.projects[0].category}</p><h3>{t.projects[0].name}</h3><p>{t.projects[0].text}</p><p className="contribution">{t.projects[0].role}</p><a className="text-link" href={pagePath(locale,'projects/'+t.projects[0].id+'/')}>{fr?'Lire le récit':'Read the story'} <Arrow/></a></div><figure><a href={pagePath(locale,'projects/droit-de-retard/')} aria-label={t.projects[0].name}><img src="/images/droit-de-retard.png" alt={fr?'Capture du prototype Droit de Retard : saisie du vol et résultat de l’analyse.':'Droit de Retard prototype screenshot: flight input and analysis result.'} width="1440" height="1180"/></a><figcaption>{t.screenshot}</figcaption></figure></article>
-    <div className="project-pair">{t.projects.slice(1).map((p,i)=><article key={p.name}><span className="small-number">0{i+2}</span><p className="eyebrow">{p.category}</p><h3>{p.name}</h3><p>{p.text}</p><p className="contribution">{p.role}</p><a className="text-link" href={pagePath(locale,'projects/'+p.id+'/')}>{fr?'Lire le récit':'Read the story'} <Arrow/></a></article>)}</div>
-    <div className="systems"><div><h3>{t.foundation}</h3><p>{t.foundationText}</p></div><ul>{t.systems.map(p=><li key={p.name}><a href={'https://github.com/Wesper-Dev/'+p.name}><strong>{p.name}</strong><span>{p.text}</span><Arrow/></a></li>)}</ul></div>
-    <a className="text-link section-more" href={pagePath(locale,'projects/')}>{fr?'Tous les projets':'All projects'} <Arrow/></a>
-   </section>
-   <section id="hackathons" className="section hackathons"><div className="section-heading"><span className="index">02 /</span><div><h2>{t.hackTitle}</h2><p>{t.hackIntro}</p></div></div><p className="eyebrow">{t.hackMore}</p><div className="event-list">
-    {events.filter(e=>['gemma','gcpu','ia-crise'].includes(e.id)).map(e=><a key={e.id} href={pagePath(locale,'projects/'+e.project+'/')}><span>{e.date?.slice(0,4) ?? '—'}</span><h3>{e.name}{e.rank?<span className="rank">{e.rank[locale]}</span>:null}</h3><span className="event-topic">{e[locale].context}</span><Arrow/></a>)}
-   </div><a className="text-link section-more" href={pagePath(locale,'hackathons/')}>{fr?'Tous les hackathons':'All hackathons'} <Arrow/></a></section>
-   <section id="about" className="section"><div className="section-heading"><span className="index">03 /</span><div><h2>{t.aboutTitle}</h2><p>{t.aboutIntro}</p></div></div><div className="communities">{t.communities.map(c=><article key={c.name}><p className="eyebrow">{c.tag}</p><h3>{c.url?<a href={c.url}>{c.name} <Arrow/></a>:c.name}</h3><p>{c.text}</p></article>)}</div>
-    <div className="experience"><h3>{t.path}</h3><div>{t.experiences.map(e=><div className="experience-row" key={e[1]}><span>{e[0]}</span><strong>{e[1]}</strong><p>{e[2]}</p></div>)}</div></div>
-   </section>
-   <Contact locale={locale}/>
-  </main><Footer locale={locale}/>
- </div>
+import { home, type Locale } from '../content/home';
+import { homeUi } from '../content/home-ui';
+import { DEFAULT_PALETTE, PALETTES } from '../content/palettes';
+import { GITHUB, LINKEDIN, MAIL, ORIGIN, jsonLdHtml, personNode } from '../lib/person';
+import { cssVariables } from '../lib/tree/color';
+import { SiteFooter, SiteHeader, pagePath } from './site-shell';
+import TreeHero from './tree/TreeHero';
+
+const palette = PALETTES[DEFAULT_PALETTE];
+// Palette tokens of the whole home page (E10.1): the scene keeps [data-home] and the tree block equal.
+const tokens = cssVariables(palette) as CSSProperties;
+// Background of <html> and <body> on the home page only (E10.3): the CSS reads --home-bg, the workshop
+// rewrites it with the palette; color-scheme stays in the CSS, never in an attribute.
+const pageBackground = `:root{--home-bg:${palette.bg}}`;
+const Arrow = () => <span aria-hidden="true">↗</span>;
+const Next = () => <span aria-hidden="true">→</span>;
+
+// FAQ (contract lot 6a, V1–V2): content/faq.json holds the text; an answer block may carry Markdown links [text](href).
+type FaqItem = { id: string; question: string; answer: string[]; link: { text: string; href: string } | null };
+const LINK = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+const plain = (block: string) => block.replace(LINK, '$1');
+function inline(block: string): ReactNode[] {
+  const out: ReactNode[] = [];
+  let last = 0;
+  for (const m of block.matchAll(LINK)) {
+    out.push(block.slice(last, m.index));
+    out.push(<a key={m.index} href={m[2]}>{m[1]}</a>);
+    last = m.index + m[0].length;
+  }
+  out.push(block.slice(last));
+  return out;
+}
+
+// Keeps hyphenated compounds of a question (droit-de-retard, Croix-Rouge) on one line: a heading never breaks after a hyphen.
+const unbroken = (question: string): ReactNode[] =>
+  question.split(/(\S+-\S+)/).map((part, i) => (i % 2 ? <span key={i} data-faq-nowrap="">{part}</span> : part));
+
+// Structured data of a home page (lot 6a, X5): the profile page with its full Person (shared @id), and the FAQ,
+// both with the page's url and language. Answers are the visible answer text (blocks joined by a newline, links
+// reduced to their label, the "read more" line left out).
+function homeJsonLd(locale: Locale) {
+  const items: FaqItem[] = faq[locale].items;
+  const url = ORIGIN + (locale === 'fr' ? '/fr/' : '/');
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'ProfilePage', url, inLanguage: locale, mainEntity: personNode(locale) },
+      { '@type': 'FAQPage', url, inLanguage: locale, mainEntity: items.map((it) => ({ '@type': 'Question', name: it.question, acceptedAnswer: { '@type': 'Answer', text: it.answer.map(plain).join('\n') } })) },
+    ],
+  };
+}
+
+export default function PortfolioHome({ locale }: { locale: Locale }) {
+  const t = home[locale];
+  const ui = homeUi[locale];
+  const fr = locale === 'fr';
+  const other: Locale = fr ? 'en' : 'fr';
+  const questions: FaqItem[] = faq[locale].items;
+  return (
+    <div data-home="" lang={locale} style={tokens}>
+      {/* Fonts of the first screen (E9.5): Inter Tight (header, BNP sentence, fallback) and IBM Plex Mono (fallback skills). */}
+      <link rel="preload" href="/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      <link rel="preload" href="/fonts/ibm-plex-mono-regular-latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      <style>{pageBackground}</style>
+      <a data-home-skip="" href="#main">{t.skip}</a>
+      <SiteHeader locale={locale} langHref={pagePath(other)} isHome />
+      <main id="main">
+        <TreeHero locale={locale} />
+        <section data-home-section="projects">
+          <h2>{t.selected}</h2>
+          <p data-home-intro="">{t.selectedNote}</p>
+          <ul data-home-projects="">
+            {t.projects.map((p) => (
+              <li key={p.id}>
+                <p data-home-tag="">{p.category}</p>
+                <h3>{p.name}</h3>
+                <p>{p.text}</p>
+                <p data-home-muted="">{p.role}</p>
+                <a data-home-more="" href={pagePath(locale, `projects/${p.id}/`)}>{ui.storyLink}</a>
+              </li>
+            ))}
+          </ul>
+          <a data-home-all="" href={pagePath(locale, 'projects/')}>{fr ? 'Tous les projets' : 'All projects'} <Next /></a>
+        </section>
+        <section data-home-section="hackathons">
+          <h2>{t.hackTitle}</h2>
+          <p data-home-intro="">{t.hackIntro}</p>
+          <ul data-home-events="">
+            {events.filter((e) => ['gemma', 'gcpu', 'ia-crise'].includes(e.id)).map((e) => (
+              <li key={e.id}>
+                <a href={pagePath(locale, `projects/${e.project}/`)}>
+                  <span data-home-year="">{e.date?.slice(0, 4)}</span>
+                  <span data-home-event="">
+                    <strong>{e.name}</strong>
+                    {e.rank ? <span data-home-rank="">{e.rank[locale]}</span> : null}
+                  </span>
+                  <span data-home-muted="">{e[locale].context}</span>
+                  <Next />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a data-home-all="" href={pagePath(locale, 'hackathons/')}>{fr ? 'Tous les hackathons' : 'All hackathons'} <Next /></a>
+        </section>
+        <section id="about" data-home-section="about">
+          <h2>{t.aboutTitle}</h2>
+          <p data-home-intro="">{t.aboutIntro}</p>
+          <ul data-home-communities="">
+            {t.communities.map((c) => (
+              <li key={c.name}>
+                <p data-home-tag="">{c.tag}</p>
+                <h3>{c.url ? <a href={c.url}>{c.name} <Arrow /></a> : c.name}</h3>
+                <p data-home-muted="">{c.text}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+        <section data-home-section="contact">
+          <h2>{t.endTitle}</h2>
+          <p data-home-intro="">{t.endText}</p>
+          <p data-home-available="">{availability[locale]}</p>
+          <div data-home-links="">
+            <a data-home-mail="" href={MAIL}>{t.mail} <Arrow /></a>
+            <a href={GITHUB}>GitHub <Arrow /></a>
+            <a href={LINKEDIN}>LinkedIn <Arrow /></a>
+          </div>
+        </section>
+        {/* Fifth section (lot 6a): static, always open, no client code; nothing but faq.json inside. */}
+        <section id="faq" data-home-section="faq">
+          <h2>{faq[locale].title}</h2>
+          {questions.map((it) => (
+            <div key={it.id} data-faq-item={it.id}>
+              <h3 data-faq-question="">{unbroken(it.question)}</h3>
+              <div data-faq-answer="">
+                {it.answer.map((block, i) => <p key={i}>{inline(block)}</p>)}
+              </div>
+              {it.link ? (
+                <p data-faq-link="">
+                  <a href={it.link.href}>{it.link.text} <span aria-hidden="true">→</span></a>
+                </p>
+              ) : null}
+            </div>
+          ))}
+        </section>
+      </main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdHtml(homeJsonLd(locale))} />
+      <SiteFooter locale={locale} />
+    </div>
+  );
 }

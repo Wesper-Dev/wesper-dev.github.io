@@ -1,0 +1,66 @@
+Arnaud DURAND
+
+|
+
+Software Engineer
+
+Paris, France ◦ arnaud.durand97@gmail.com ◦ wesper-dev.github.io
+linkedin.com/in/arnaud-durand42 ◦ github.com/Wesper-Dev
+Available now — permanent role; open to freelance and open-source projects
+An LLM tool built with a colleague and approved for production at a bank by the steering committee, with a React app;
+an agent covered by more than 120 offline tests; systems foundations in C from 42.
+
+Professional Experience
+BPCE
+Apr 2026 – Oct 2026
+AI Platform Engineering Intern
+• Designed a Docker sandbox for an agent-runtime PoC with future production security requirements in mind: non-root
+execution and allow-listed network access; contributed to its Kubernetes design with the infrastructure team.
+• Cut the time needed to schedule training for 1,500–3,000 employees from 1–2 days to 1 hour with an optimisation PoC
+covering 20 business rules.
+BNP Paribas
+Sep 2025 – Mar 2026
+Data Scientist Intern
+• Reduced processing time for Word reports on performance tests from 3–5 to 1–3 minutes, partly by analysing 10–15
+screenshots in parallel with an LLM, in a React app built with a colleague.
+• Tool approved for production by the steering committee, with about 95% analyst agreement with the tool’s comments and
+a cost of about €0.30–0.40 per report; the lead analyst estimated annual savings of about 300 person-days for the team.
+• Managed the staging host for the team’s LLM tools, around 15 PoCs (75+ Docker containers); traced an interruption
+in Langfuse logging to a full disk and freed 600 GB of storage.
+• Deployed Langfuse on-premises, adopted by 5 PoCs; wrote a team tutorial.
+French Red Cross
+2025
+Volunteer AI Contributor
+• At the hackathon, built the front end and features of a chatbot for first-aiders and co-built its RAG over a 700-page
+manual with a third-party platform’s tools.
+• Over six months, co-developed the app (front and back end): more realistic role-play scenarios with domain experts,
+flashcards and a contribution to the Socratic coach; team platform tested with about 50 first-aiders.
+
+Projects
+droit-de-retard
+2026
+• Extended a team hackathon project into a local-first agent that drafts flight-delay compensation claims from passenger
+documents: the model extracts data, an allow-list restricts tool calls, and Python calculates compensation.
+• More than 120 offline tests; evaluation scope documented in the repository.
+Minishell
+• Shell in C: command execution, pipes, redirections and process handling with UNIX system calls.
+
+Hackathons
+1st of 12 teams: IA & Crise, French Red Cross (2025) – RAG chatbot for first-aiders
+1st place: Science inFuZe (2025), Académie de Versailles track – app promoting women in science
+1st place: Google Datacenter Hardware (2024) – server-rack configuration
+2nd place: LCL & Google Cloud (2024) – chatbot recommending bank cards
+3rd of 20 teams: Hackathon 54 (2024) – embedded prototype, concept taken forward
+
+Technical Skills
+Languages: Python, C, C++, Bash, SQL, TypeScript.
+Applied AI: RAG, function-calling agents, offline evals, Ollama, FastAPI.
+Platform: Linux, Docker, Kubernetes, Git, CI/CD, Langfuse.
+
+Education, Community & Languages
+École 42 Paris, 2019–2026: C/C++, POSIX, concurrency.
+GDG on Campus 42 Paris – Co-Lead Organizer since May 2026; 2 events of 100+ attendees (Google talk on Gemini).
+Fitness 42 – Coach for 3+ years: 50+ sessions, 20+ of them solo-led, 15–20 participants each.
+Languages: Native French, fluent English, Spanish (B1).
+
+

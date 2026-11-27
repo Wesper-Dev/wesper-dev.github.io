@@ -1,0 +1,67 @@
+Arnaud DURAND
+
+|
+
+Ingénieur logiciel
+
+Paris, France ◦ arnaud.durand97@gmail.com ◦ wesper-dev.github.io
+linkedin.com/in/arnaud-durand42 ◦ github.com/Wesper-Dev
+Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source
+Un outil LLM développé en binôme et validé pour la production dans une banque par le comité de pilotage, avec une
+application React ; un agent couvert par plus de 120 tests hors ligne ; des bases systèmes en C acquises à 42.
+
+Expérience professionnelle
+BPCE
+avr. 2026 – oct. 2026
+Ingénierie plateforme IA (stage)
+• Conçu une sandbox Docker de POC selon les contraintes visées en production : exécution non root, réseau en liste
+blanche ; contribution à l’architecture Kubernetes du runtime d’agents avec l’équipe infra.
+• Ramené de 1–2 jours à 1 h la planification des formations de 1 500 à 3 000 collaborateurs : POC d’optimisation sous 20
+règles métier.
+BNP Paribas
+sept. 2025 – mars 2026
+Data Scientist (stage)
+• Ramené le traitement d’un rapport Word de tests de performance de 3–5 à 1–3 min, notamment en envoyant ses 10–15
+captures au LLM en parallèle, dans une application React faite en binôme.
+• Outil validé pour la production par le comité de pilotage, avec env. 95 % d’accord des analystes avec les commentaires
+de l’outil et un coût d’env. 0,30–0,40 € par rapport ; gain estimé par le chef des analystes à env. 300 jours-homme par
+an pour l’équipe.
+• Administré l’hôte de staging des outils LLM de l’équipe, env. 15 POC (75+ conteneurs Docker) ; remonté une perte de
+traces jusqu’au disque plein et récupéré 600 Go.
+• Déployé Langfuse on-premise, adopté par 5 POC ; tutoriel d’équipe.
+Croix-Rouge française
+2025
+Contribution IA bénévole
+• Au hackathon, développé le front et les fonctionnalités d’un chatbot pour secouristes, et co-construit son RAG sur un
+manuel de 700 pages avec les outils d’une plateforme tierce.
+• Sur six mois, co-développé l’application (front, back) : scénarios de jeu de rôle plus réalistes avec les équipes métier,
+flashcards et contribution au coach socratique ; plateforme d’équipe testée auprès d’env. 50 secouristes.
+
+Projets
+droit-de-retard
+2026
+• Continuation personnelle d’un projet de hackathon : agent local-first qui prépare un brouillon de réclamation pour vol
+retardé à partir des documents du passager ; le modèle extrait, une liste blanche décide, Python calcule.
+• Plus de 120 tests hors ligne ; périmètre d’évaluation documenté dans le dépôt.
+Minishell
+• Shell en C : exécution de commandes, pipes, redirections et gestion des processus par appels système UNIX.
+
+Hackathons
+1re sur 12 équipes : IA & Crise, Croix-Rouge (2025) – chatbot RAG pour aider les secouristes
+1re place : Science inFuZe (2025), track Académie de Versailles – application pour promouvoir les femmes en sciences
+1re place : Google Datacenter Hardware (2024) – configuration d’une baie serveur
+2e place : LCL & Google Cloud (2024) – chatbot de recommandation de cartes bancaires
+3e sur 20 équipes : Hackathon 54 (2024) – prototype embarqué, concept retenu pour la suite
+
+Compétences techniques
+Langages : Python, C, C++, Bash, SQL, TypeScript.
+IA appliquée : RAG, agents avec function calling, évaluations hors ligne, Ollama, FastAPI.
+Plateforme : Linux, Docker, Kubernetes, Git, CI/CD et Langfuse.
+
+Formation, communauté & langues
+École 42 Paris, 2019–2026 : projets en C/C++, UNIX/POSIX, concurrence.
+GDG on Campus 42 Paris – Co-Lead Organizer depuis mai 2026 ; 2 événements de 100+ personnes (talk Google).
+Fitness 42 – coach depuis 3+ ans : 50+ séances, dont 20+ menées seul, 15 à 20 personnes par séance.
+Langues : français langue maternelle ; anglais courant ; espagnol B1.
+
+

@@ -22,10 +22,16 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      # Lot 5: the contract tests read the served CV PDFs with Poppler (pdftotext, pdfinfo, pdfimages); they fail,
+      # never skip, when it is missing.
+      - name: Install PDF tools (poppler-utils)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils && pdftotext -v
       - name: Install locked dependencies
         run: npm ci --ignore-scripts
       - name: Build public static export
         run: npm run build
+      - name: Run contract tests on the export
+        run: npm test
       - name: Check types and exported routes
         run: |
           npx tsc --noEmit

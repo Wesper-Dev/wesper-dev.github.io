@@ -1,0 +1,1338 @@
+{
+  "_lisezMoi": "Exceptions nommées à la référence Q3 (a040fb0), une à une, décisions du propriétaire du 24/11/2026 (tmp/refonte-arbre/contrat-lot4-s.md, S1 et S3). La référence baseline-a040fb0.json n'est pas modifiée : avant la comparaison, une valeur NOUVELLE exacte, sur une route listée, est ramenée à sa valeur a040fb0. Toute autre valeur, ou la valeur nouvelle sur une autre route, reste un écart. Lue par tests/helpers-4.ts (Q3, Q2 accueils) et tmp/refonte-arbre/verif-4/verif.mjs (Q3.1, R4.2, R6.1). Champ « texte » : une phrase du texte du <main> (blancs réduits) ; champ « og:image:alt » : la métadonnée. Lot 5 (tmp/refonte-arbre/contrat-lot5.md, T3 et T4) : exceptions « T3-… » ajoutées ; champ « description » (description, og:description, twitter:description) ; « texte » vaut aussi pour le texte des liens du <main> et, sur les accueils, pour tout le HTML (rendu et charge RSC). « requis » : fragments que la valeur nouvelle doit contenir. Pour les exceptions marquées « proposition », seul « nouveau » peut changer, dans la liste avant → après ; ids, routes, « ancien » et « requis » sont figés par t0-exceptions-lot5.test.ts et s0-exceptions-q3.test.ts. Tour Z (contrat-textes-z.md, Z1 et Z4, 25/11/2026) : exceptions « Z… », au plus juste (fragment changé seulement pour le texte, méta-description entière). Z4-note-* sont en tête, AVANT S1-* : la note perd sa deuxième phrase, et c’est la note entière qui est ramenée à a040fb0 (l’ordre du fichier est l’ordre d’application, ici comme dans verif-4). Le test V7 (274537a) applique les seules exceptions « Z… », avec « ancienV7 » quand la valeur de 274537a diffère de celle de a040fb0. Tour W (contrat-relecture-w.md, 26/11/2026) : exceptions « W… », en fin de fichier, au plus juste ; champs nouveaux « alt », « title », « og:title », « twitter:title », « og:locale » ; « html » : fragment exact que le retour sur le HTML (Q2, V7) remplace à la place du texte ; « ancien » vide = insertion (surtitre BNP). Générées et contrôlées par tmp/refonte-arbre/preuves-relecture-w/exceptions_w.py.",
+  "exceptions": [
+    {
+      "id": "Z4-note-en",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z4, note du CV sur Compétences réduite à la phrase de disponibilité (« Write to me… » retirée). Placée AVANT S1-en : elle ramène la note entière à a040fb0 ; S1-en ne s’applique plus qu’à l’export d’avant Z4.",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "Written for a permanent role from 16 October 2026. Write to me and I will send the version with a phone number.",
+      "nouveau": "Available now — permanent role; open to freelance and open-source projects.",
+      "ancienV7": "Available now — permanent role; open to freelance and open-source projects. Write to me and I will send the version with a phone number."
+    },
+    {
+      "id": "Z4-note-fr",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z4, note du CV sur Compétences réduite à la phrase de disponibilité (« Écrivez-moi… » retirée). Placée AVANT S1-fr, même raison.",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "Écrit pour un CDI à partir du 16 octobre 2026. Écrivez-moi et je vous envoie la version avec un téléphone.",
+      "nouveau": "Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source.",
+      "ancienV7": "Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source. Écrivez-moi et je vous envoie la version avec un téléphone."
+    },
+    {
+      "id": "S1-en",
+      "decision": "S1 : note du CV sur Compétences, première phrase = availability.en (FAITS §7, Q-R7)",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "Written for a permanent role from 16 October 2026.",
+      "nouveau": "Available now — permanent role; open to freelance and open-source projects."
+    },
+    {
+      "id": "S1-fr",
+      "decision": "S1 : note du CV sur Compétences, première phrase = availability.fr (FAITS §7, Q-R7)",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "Écrit pour un CDI à partir du 16 octobre 2026.",
+      "nouveau": "Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source."
+    },
+    {
+      "id": "S3-en",
+      "decision": "S3 : texte alternatif de l'image de partage par défaut",
+      "champ": "og:image:alt",
+      "routes": [
+        "/",
+        "/projects/",
+        "/hackathons/",
+        "/skills/",
+        "/projects/diary/",
+        "/projects/croix-rouge/",
+        "/experiences/bnp-paribas/",
+        "/experiences/bpce/",
+        "/experiences/ecole-42/"
+      ],
+      "ancien": "Arnaud Durand | AI, Systems, Projects",
+      "nouveau": "Arnaud Durand, Software Engineer"
+    },
+    {
+      "id": "S3-fr",
+      "decision": "S3 : texte alternatif de l'image de partage par défaut",
+      "champ": "og:image:alt",
+      "routes": [
+        "/fr/",
+        "/fr/projects/",
+        "/fr/hackathons/",
+        "/fr/skills/",
+        "/fr/projects/diary/",
+        "/fr/projects/croix-rouge/",
+        "/fr/experiences/bnp-paribas/",
+        "/fr/experiences/bpce/",
+        "/fr/experiences/ecole-42/"
+      ],
+      "ancien": "Arnaud Durand | IA, systèmes, projets",
+      "nouveau": "Arnaud Durand, ingénieur logiciel"
+    },
+    {
+      "id": "T3-python-en",
+      "decision": "T3, FAITS §5 (A-09) : « déterministes » retiré, « 120+ » → « more than 120 » ; skills.ts:27 (spec §4.7)",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "droit-de-retard: tool-call validation and 120+ deterministic tests",
+      "nouveau": "droit-de-retard: tool-call validation and more than 120 offline tests",
+      "requis": [
+        "more than 120 offline tests"
+      ]
+    },
+    {
+      "id": "T3-python-fr",
+      "decision": "T3, FAITS §5 (A-09) : « déterministes » retiré ; skills.ts:65 (spec §4.7)",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "droit-de-retard : validation des appels d’outils et plus de 120 tests déterministes",
+      "nouveau": "droit-de-retard : validation des appels d’outils et plus de 120 tests hors ligne",
+      "requis": [
+        "plus de 120 tests hors ligne"
+      ]
+    },
+    {
+      "id": "T3-evals-nom-en",
+      "decision": "T3, K19 : nom « Offline evals and deterministic tests » sans « deterministic » ; skills.ts:44, repris dans knowsAbout — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "Offline evals and deterministic tests",
+      "nouveau": "Offline evals and tests",
+      "requis": [
+        "Offline evals"
+      ]
+    },
+    {
+      "id": "T3-evals-preuve-en",
+      "decision": "T3, FAITS §5 (A-09) : « 120+ offline tests » → « more than 120 offline tests » ; skills.ts:44",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "droit-de-retard: 120+ offline tests, evaluation scope written down in the repository",
+      "nouveau": "droit-de-retard: more than 120 offline tests, evaluation scope written down in the repository",
+      "requis": [
+        "more than 120 offline tests"
+      ]
+    },
+    {
+      "id": "T3-evals-nom-fr",
+      "decision": "T3, K19 : nom « Évaluations hors ligne et tests déterministes » sans « déterministes » ; valeur nouvelle non contenue dans l'ancienne (le retour compacté de verif-4 doublerait sinon « déterministes ») ; skills.ts:82, repris dans knowsAbout — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "Évaluations hors ligne et tests déterministes",
+      "nouveau": "Tests et évaluations hors ligne",
+      "requis": [
+        "évaluations hors ligne"
+      ]
+    },
+    {
+      "id": "T3-k8s-en",
+      "decision": "T3, FAITS §9.3 : BPCE au passé, « contributing » → « contributed » ; skills.ts:37",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "BPCE: contributing to the Kubernetes architecture of an internal agent runtime, with the infrastructure team",
+      "nouveau": "BPCE: contributed to the Kubernetes architecture of an internal agent runtime, with the infrastructure team",
+      "requis": [
+        "BPCE: contributed"
+      ]
+    },
+    {
+      "id": "T3-cv-texte-en",
+      "decision": "T3, spec §4.7 (skills.ts:51) : « identical wording » devenu faux (le CV public diffère des CV de candidature) — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "My CV holds this list and the rest of the story. This is the public copy: identical wording, without my phone number.",
+      "nouveau": "My CV holds this list and the rest of the story. This is the public copy, without my phone number.",
+      "requis": [
+        "without my phone number"
+      ]
+    },
+    {
+      "id": "T3-cv-texte-fr",
+      "decision": "T3, spec §4.7 (skills.ts:89) : « mêmes formulations » devenu faux — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "Mon CV porte cette liste et le reste du parcours. C’est la version publique : mêmes formulations, sans mon numéro de téléphone.",
+      "nouveau": "Mon CV porte cette liste et le reste du parcours. C’est la version publique, sans mon numéro de téléphone.",
+      "requis": [
+        "sans mon numéro de téléphone"
+      ]
+    },
+    {
+      "id": "T3-cv-libelle-en",
+      "decision": "T3, spec §4.7 (skills.ts:54) : libellé du CV « Applied AI » aligné sur le titre (Q-R10) — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "Applied AI",
+      "nouveau": "Software Engineer",
+      "requis": []
+    },
+    {
+      "id": "T3-cv-libelle-fr",
+      "decision": "T3, spec §4.7 (skills.ts:92) : libellé du CV « IA appliquée » aligné sur le titre (Q-R10) — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "IA appliquée",
+      "nouveau": "Ingénieur logiciel",
+      "requis": []
+    },
+    {
+      "id": "T3-croix-rouge-en",
+      "decision": "T3, FAITS §3 (Données existantes à corriger au lot 5) : projects.json:74, rôle Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/",
+        "/projects/",
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "Volunteer: the chatbot’s front end and RAG at the hackathon",
+      "nouveau": "Volunteer: the chatbot’s front end and co-built RAG at the hackathon",
+      "requis": [
+        "the chatbot’s front end and co-built RAG"
+      ]
+    },
+    {
+      "id": "T3-croix-rouge-fr",
+      "decision": "T3, FAITS §3 (Données existantes à corriger au lot 5) : projects.json:65, rôle Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/fr/",
+        "/fr/projects/",
+        "/fr/projects/croix-rouge/"
+      ],
+      "ancien": "Bénévolat : front et RAG du chatbot au hackathon",
+      "nouveau": "Bénévolat : front du chatbot et RAG co-construit au hackathon",
+      "requis": [
+        "front du chatbot et RAG co-construit"
+      ]
+    },
+    {
+      "id": "T3-description-en",
+      "decision": "T3, Q-R10 : description de l'accueil (app/(home)/page.tsx:3) alignée sur « Software Engineer » — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "description",
+      "routes": [
+        "/"
+      ],
+      "ancien": "AI tools, systems projects and hackathons. Arnaud Durand, Applied AI Engineer based in Paris.",
+      "nouveau": "AI tools, systems projects and hackathons. Arnaud Durand, Software Engineer based in Paris.",
+      "requis": [
+        "Software Engineer"
+      ]
+    },
+    {
+      "id": "T3-description-fr",
+      "decision": "T3, Q-R10 : description de l'accueil (app/(home-fr)/fr/page.tsx:3) alignée sur « ingénieur logiciel » — proposition des tests, texte non fixé par FAITS ni la spec : le codeur peut changer « nouveau » (et lui seul), en le reportant dans la liste avant → après",
+      "champ": "description",
+      "routes": [
+        "/fr/"
+      ],
+      "ancien": "Outils IA, projets systèmes et hackathons. Arnaud Durand, Applied AI Engineer à Paris.",
+      "nouveau": "Outils IA, projets systèmes et hackathons. Arnaud Durand, ingénieur logiciel à Paris.",
+      "requis": [
+        "ingénieur logiciel"
+      ]
+    },
+    {
+      "id": "U6-croix-rouge-en",
+      "decision": "U6 (arbitrage de l'audit du lot 5, C6 ; FAITS §3) : phrase de résumé du récit Croix-Rouge (content/stories/en/croix-rouge.md), RAG co-construit comme le rôle en tête de page ; seuls ces mots changent — proposition des tests : le codeur peut changer « nouveau » (et lui seul), qui doit contenir « requis », en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "My contribution: the chatbot’s front end and RAG at the hackathon",
+      "nouveau": "My contribution: the chatbot’s front end and co-built RAG at the hackathon",
+      "requis": [
+        "co-built RAG"
+      ]
+    },
+    {
+      "id": "U6-croix-rouge-fr",
+      "decision": "U6 (arbitrage de l'audit du lot 5, C6 ; FAITS §3) : phrase de résumé du récit Croix-Rouge (content/stories/fr/croix-rouge.md), RAG co-construit comme le rôle en tête de page ; seuls ces mots changent — proposition des tests : le codeur peut changer « nouveau » (et lui seul), qui doit contenir « requis », en le reportant dans la liste avant → après",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/croix-rouge/"
+      ],
+      "ancien": "Ma contribution : le front et le RAG du chatbot au hackathon",
+      "nouveau": "Ma contribution : le front du chatbot et le RAG co-construit au hackathon",
+      "requis": [
+        "RAG co-construit"
+      ]
+    },
+    {
+      "id": "Z1-carte-en",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, sous-titre de la carte BNP (accueil et page BNP)",
+      "champ": "texte",
+      "routes": [
+        "/",
+        "/experiences/bnp-paribas/"
+      ],
+      "ancien": "tool released to production after steering-committee approval",
+      "nouveau": "tool approved for production by the steering committee"
+    },
+    {
+      "id": "Z1-carte-fr",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, sous-titre de la carte BNP (accueil et page BNP)",
+      "champ": "texte",
+      "routes": [
+        "/fr/",
+        "/fr/experiences/bnp-paribas/"
+      ],
+      "ancien": "outil mis en production après comité de pilotage",
+      "nouveau": "outil validé pour la production par le comité de pilotage"
+    },
+    {
+      "id": "Z1-phrase-en",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, phrase BNP du premier écran (accueil)",
+      "champ": "texte",
+      "routes": [
+        "/"
+      ],
+      "ancien": "it was released to production after steering-committee approval",
+      "nouveau": "it was approved for production by the steering committee"
+    },
+    {
+      "id": "Z1-phrase-fr",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, phrase BNP du premier écran (accueil)",
+      "champ": "texte",
+      "routes": [
+        "/fr/"
+      ],
+      "ancien": "rapports, mis en production après comité de pilotage",
+      "nouveau": "rapports, validé pour la production par le comité de pilotage"
+    },
+    {
+      "id": "Z1-detail-en",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, deuxième paragraphe de la page BNP",
+      "champ": "texte",
+      "routes": [
+        "/experiences/bnp-paribas/"
+      ],
+      "ancien": "The tool was released to production after steering-committee approval",
+      "nouveau": "The tool was approved for production by the steering committee"
+    },
+    {
+      "id": "Z1-detail-fr",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, deuxième paragraphe de la page BNP",
+      "champ": "texte",
+      "routes": [
+        "/fr/experiences/bnp-paribas/"
+      ],
+      "ancien": "a été mis en production après comité de pilotage",
+      "nouveau": "a été validé pour la production par le comité de pilotage"
+    },
+    {
+      "id": "Z1-description-en",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, méta-description de la page BNP (phrase du premier écran)",
+      "champ": "description",
+      "routes": [
+        "/experiences/bnp-paribas/"
+      ],
+      "ancien": "At BNP Paribas, I built a report-analysis tool with a colleague; it was released to production after steering-committee approval, and processing a report went from 3–5 to 1–3 minutes.",
+      "nouveau": "At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes."
+    },
+    {
+      "id": "Z1-description-fr",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z1, méta-description de la page BNP (phrase du premier écran)",
+      "champ": "description",
+      "routes": [
+        "/fr/experiences/bnp-paribas/"
+      ],
+      "ancien": "Chez BNP Paribas, j'ai développé en binôme un outil d'analyse de rapports, mis en production après comité de pilotage ; le traitement d'un rapport est passé de 3–5 à 1–3 minutes.",
+      "nouveau": "Chez BNP Paribas, j’ai développé en binôme un outil d’analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d’un rapport est passé de 3–5 à 1–3 minutes."
+    },
+    {
+      "id": "Z4-intro-en",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z4, introduction de Compétences (« can read them »)",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "a machine can read it.",
+      "nouveau": "a machine can read them."
+    },
+    {
+      "id": "Z4-intro-fr",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z4, introduction de Compétences (« puisse les lire »)",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "une machine puisse la lire.",
+      "nouveau": "une machine puisse les lire."
+    },
+    {
+      "id": "Z4-description-en",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z4, méta-description de Compétences (introduction)",
+      "champ": "description",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "The skills from my CV, in text rather than in a picture, so a person or a machine can read it. Each line says where it was actually used.",
+      "nouveau": "The skills from my CV, in text rather than in a picture, so a person or a machine can read them. Each line says where it was actually used."
+    },
+    {
+      "id": "Z4-description-fr",
+      "decision": "Tour Z (tmp/refonte-arbre/contrat-textes-z.md), décision d’Arnaud du 25/11/2026 : Z4, méta-description de Compétences (introduction)",
+      "champ": "description",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "Les compétences de mon CV, en texte plutôt qu’en image, pour qu’une personne comme une machine puisse la lire. Chaque ligne dit où cela a réellement servi.",
+      "nouveau": "Les compétences de mon CV, en texte plutôt qu’en image, pour qu’une personne comme une machine puisse les lire. Chaque ligne dit où cela a réellement servi."
+    },
+    {
+      "id": "W1-B1-git-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 B1, Compétences, ligne Git (texte A19 « linked here »)",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "Every public repository here; this site goes through pull requests before reaching main",
+      "nouveau": "Every public repository linked here"
+    },
+    {
+      "id": "W1-B1-git-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 B1, Compétences, ligne Git (moitié sur les pull requests retirée)",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "Tous les dépôts publics cités ici ; ce site passe par des pull requests avant d’arriver sur main ↗",
+      "nouveau": "Tous les dépôts publics cités ici ↗",
+      "html": {
+        "ancien": "<span>Tous les dépôts publics cités ici ; ce site passe par des pull requests avant d’arriver sur main<!-- --> <span aria-hidden=\"true\">",
+        "nouveau": "<span>Tous les dépôts publics cités ici<!-- --> <span aria-hidden=\"true\">"
+      }
+    },
+    {
+      "id": "W1-B1-cicd-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 B1, Compétences, ligne CI/CD",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "This site: pull requests checked and main deployed after a successful build",
+      "nouveau": "This site: main is deployed after a successful build"
+    },
+    {
+      "id": "W1-B1-cicd-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 B1, Compétences, ligne CI/CD",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "Ce site : les pull requests sont contrôlées et main déployé après un build réussi",
+      "nouveau": "Ce site : main est déployé après un build réussi"
+    },
+    {
+      "id": "W1-D8-langfuse-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 D8 et W4 A16, Compétences, ligne Langfuse",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "on-premise LLM observability (traces, cost, performance)",
+      "nouveau": "on-premises LLM observability (traces, cost)"
+    },
+    {
+      "id": "W1-D8-langfuse-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 D8, Compétences, ligne Langfuse",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "observabilité LLM on-premise (traces, coûts, performances)",
+      "nouveau": "observabilité LLM on-premise (traces, coûts)"
+    },
+    {
+      "id": "W1-C1-surtitre-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 C1, surtitre de rôle et dates de la page BNP (insertion)",
+      "champ": "texte",
+      "routes": [
+        "/experiences/bnp-paribas/"
+      ],
+      "ancien": "",
+      "nouveau": "Data Scientist Intern · Sep 2025 – Mar 2026",
+      "html": {
+        "ancien": "",
+        "nouveau": "<p class=\"eyebrow\">Data Scientist Intern<!-- --> · <span class=\"tree-nowrap\">Sep 2025 – Mar 2026</span></p>"
+      }
+    },
+    {
+      "id": "W1-C1-surtitre-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 C1, surtitre de rôle et dates de la page BNP (insertion)",
+      "champ": "texte",
+      "routes": [
+        "/fr/experiences/bnp-paribas/"
+      ],
+      "ancien": "",
+      "nouveau": "Data Scientist (stage) · sept. 2025 – mars 2026",
+      "html": {
+        "ancien": "",
+        "nouveau": "<p class=\"eyebrow\">Data Scientist (stage)<!-- --> · <span class=\"tree-nowrap\">sept. 2025 – mars 2026</span></p>"
+      }
+    },
+    {
+      "id": "W1-C2-role-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 C2 (« up to May 2025 » retiré) et W4 A6 (« contributions to »), rôle Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/",
+        "/projects/",
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "flashcards, help on the Socratic coach. The public repository shows part of the team’s code, up to May 2025; the rest",
+      "nouveau": "flashcards, contributions to the Socratic coach. The public repository shows part of the team’s code; the rest"
+    },
+    {
+      "id": "W1-C2-role-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 C2, rôle Croix-Rouge (« jusqu’en mai 2025 » retiré)",
+      "champ": "texte",
+      "routes": [
+        "/fr/",
+        "/fr/projects/",
+        "/fr/projects/croix-rouge/"
+      ],
+      "ancien": "Le dépôt public montre une partie du code de l’équipe, jusqu’en mai 2025 ; le reste",
+      "nouveau": "Le dépôt public montre une partie du code de l’équipe ; le reste"
+    },
+    {
+      "id": "W1-C2-recit-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 C2, récit Croix-Rouge (« up to May 2025 » retiré)",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "My public fork shows part of the team’s code, up to May 2025, committed",
+      "nouveau": "My public fork shows part of the team’s code, committed"
+    },
+    {
+      "id": "W1-C2-recit-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W1 C2, récit Croix-Rouge (« jusqu’en mai 2025 » retiré)",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/croix-rouge/"
+      ],
+      "ancien": "Mon fork public montre une partie du code de l’équipe, jusqu’en mai 2025, commité",
+      "nouveau": "Mon fork public montre une partie du code de l’équipe, commité"
+    },
+    {
+      "id": "W2-tests-ddr-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, récit droit-de-retard : phrase qui refuse de figer un nombre de tests retirée (renvoi gardé, forme A4)",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "I link to that versioned evaluation instead of freezing a test count in this story: the scope can change alongside the code.",
+      "nouveau": "I link to that versioned evaluation: its scope changes alongside the code."
+    },
+    {
+      "id": "W2-tests-ddr-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, récit droit-de-retard : phrase qui refuse de figer un nombre de tests retirée (renvoi gardé)",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Je préfère renvoyer à cette évaluation versionnée plutôt que figer un nombre de tests dans ce récit : le périmètre peut évoluer avec le code.",
+      "nouveau": "Je renvoie à cette évaluation versionnée : son périmètre évolue avec le code."
+    },
+    {
+      "id": "W2-W4-socle-ddr-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2 (A3, phrase présente seulement en anglais retirée) et W4 A8 (« my grounding in systems »)",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "my systems foundation: making transitions, validation and errors explicit enough to examine. The public repository is the place to inspect those choices, reproduce the documented checks and see what still needs work.",
+      "nouveau": "my grounding in systems: making transitions, validation and errors explicit enough to examine."
+    },
+    {
+      "id": "W2-W4-cout-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2 (« our analysis tool ») et W4 A11, page BNP",
+      "champ": "texte",
+      "routes": [
+        "/experiences/bnp-paribas/"
+      ],
+      "ancien": "I read the cost of our analysis PoC in Langfuse: about €0.30–0.40 per report.",
+      "nouveau": "Langfuse put the cost of our analysis tool at about €0.30–0.40 per report."
+    },
+    {
+      "id": "W2-cout-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, page BNP : « notre outil d’analyse »",
+      "champ": "texte",
+      "routes": [
+        "/fr/experiences/bnp-paribas/"
+      ],
+      "ancien": "le coût de notre POC d'analyse",
+      "nouveau": "le coût de notre outil d’analyse",
+      "ancienV7": "le coût de notre POC d’analyse"
+    },
+    {
+      "id": "W2-fiche-bpce-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, libellé du lien de la fiche BPCE de l’arbre (= FAQ)",
+      "champ": "texte",
+      "routes": [
+        "/"
+      ],
+      "ancien": "Read the story",
+      "nouveau": "Read the BPCE case",
+      "html": {
+        "ancien": "data-card-link=\"\" href=\"/experiences/bpce/\">Read the story</a>",
+        "nouveau": "data-card-link=\"\" href=\"/experiences/bpce/\">Read the BPCE case</a>"
+      }
+    },
+    {
+      "id": "W2-fiche-bpce-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, libellé du lien de la fiche BPCE de l’arbre (= FAQ)",
+      "champ": "texte",
+      "routes": [
+        "/fr/"
+      ],
+      "ancien": "Lire le récit",
+      "nouveau": "Lire le cas BPCE",
+      "html": {
+        "ancien": "data-card-link=\"\" href=\"/fr/experiences/bpce/\">Lire le récit</a>",
+        "nouveau": "data-card-link=\"\" href=\"/fr/experiences/bpce/\">Lire le cas BPCE</a>"
+      }
+    },
+    {
+      "id": "W2-fiche-42-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, libellé du lien de la fiche École 42 de l’arbre (= FAQ)",
+      "champ": "texte",
+      "routes": [
+        "/"
+      ],
+      "ancien": "Read the story",
+      "nouveau": "See the curriculum",
+      "html": {
+        "ancien": "data-card-link=\"\" href=\"/experiences/ecole-42/\">Read the story</a>",
+        "nouveau": "data-card-link=\"\" href=\"/experiences/ecole-42/\">See the curriculum</a>"
+      }
+    },
+    {
+      "id": "W2-fiche-42-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, libellé du lien de la fiche École 42 de l’arbre (= FAQ)",
+      "champ": "texte",
+      "routes": [
+        "/fr/"
+      ],
+      "ancien": "Lire le récit",
+      "nouveau": "Voir la formation",
+      "html": {
+        "ancien": "data-card-link=\"\" href=\"/fr/experiences/ecole-42/\">Lire le récit</a>",
+        "nouveau": "data-card-link=\"\" href=\"/fr/experiences/ecole-42/\">Voir la formation</a>"
+      }
+    },
+    {
+      "id": "W2-ddr-accueil-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : titre de la carte projet de l’accueil",
+      "champ": "texte",
+      "routes": [
+        "/"
+      ],
+      "ancien": "Droit de Retard",
+      "nouveau": "droit-de-retard",
+      "html": {
+        "ancien": "<h3>Droit de Retard</h3>",
+        "nouveau": "<h3>droit-de-retard</h3>"
+      }
+    },
+    {
+      "id": "W2-ddr-accueil-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : titre de la carte projet de l’accueil",
+      "champ": "texte",
+      "routes": [
+        "/fr/"
+      ],
+      "ancien": "Droit de Retard",
+      "nouveau": "droit-de-retard",
+      "html": {
+        "ancien": "<h3>Droit de Retard</h3>",
+        "nouveau": "<h3>droit-de-retard</h3>"
+      }
+    },
+    {
+      "id": "W2-ddr-projets-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : titre de la carte de Projets",
+      "champ": "texte",
+      "routes": [
+        "/projects/"
+      ],
+      "ancien": "Droit de Retard",
+      "nouveau": "droit-de-retard",
+      "html": {
+        "ancien": "<a href=\"/projects/droit-de-retard/\">Droit de Retard</a></h2>",
+        "nouveau": "<a href=\"/projects/droit-de-retard/\">droit-de-retard</a></h2>"
+      }
+    },
+    {
+      "id": "W2-ddr-projets-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : titre de la carte de Projets",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/"
+      ],
+      "ancien": "Droit de Retard",
+      "nouveau": "droit-de-retard",
+      "html": {
+        "ancien": "<a href=\"/fr/projects/droit-de-retard/\">Droit de Retard</a></h2>",
+        "nouveau": "<a href=\"/fr/projects/droit-de-retard/\">droit-de-retard</a></h2>"
+      }
+    },
+    {
+      "id": "W2-ddr-suite-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : lien « More stories »",
+      "champ": "texte",
+      "routes": [
+        "/projects/diary/",
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "Droit de Retard",
+      "nouveau": "droit-de-retard",
+      "html": {
+        "ancien": "<a href=\"/projects/droit-de-retard/\">Droit de Retard<!-- --> <span",
+        "nouveau": "<a href=\"/projects/droit-de-retard/\">droit-de-retard<!-- --> <span"
+      }
+    },
+    {
+      "id": "W2-ddr-suite-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : lien « Autres récits »",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/diary/",
+        "/fr/projects/croix-rouge/"
+      ],
+      "ancien": "Droit de Retard",
+      "nouveau": "droit-de-retard",
+      "html": {
+        "ancien": "<a href=\"/fr/projects/droit-de-retard/\">Droit de Retard<!-- --> <span",
+        "nouveau": "<a href=\"/fr/projects/droit-de-retard/\">droit-de-retard<!-- --> <span"
+      }
+    },
+    {
+      "id": "W2-ddr-h1-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : titre du récit",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard: keeping decisions explicit",
+      "nouveau": "droit-de-retard: keeping decisions explicit"
+    },
+    {
+      "id": "W2-ddr-h1-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : titre du récit",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard : garder les décisions explicites",
+      "nouveau": "droit-de-retard : garder les décisions explicites"
+    },
+    {
+      "id": "W2-ddr-recit-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : récit",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard continues a project",
+      "nouveau": "droit-de-retard continues a project"
+    },
+    {
+      "id": "W2-ddr-recit-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : récit",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard prolonge un projet",
+      "nouveau": "droit-de-retard prolonge un projet"
+    },
+    {
+      "id": "W2-ddr-legende-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : légende de la capture",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Demo interface from the Droit de Retard repository.",
+      "nouveau": "Demo interface from the droit-de-retard repository."
+    },
+    {
+      "id": "W2-ddr-legende-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : légende de la capture",
+      "champ": "texte",
+      "routes": [
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Interface de démonstration du dépôt Droit de Retard.",
+      "nouveau": "Interface de démonstration du dépôt droit-de-retard."
+    },
+    {
+      "id": "W2-ddr-alt-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : texte alternatif de la capture",
+      "champ": "alt",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard demo interface: flight document and analysis trace.",
+      "nouveau": "droit-de-retard demo interface: flight document and analysis trace."
+    },
+    {
+      "id": "W2-ddr-alt-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : texte alternatif de la capture",
+      "champ": "alt",
+      "routes": [
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Interface de démonstration Droit de Retard : document de vol et trace de l’analyse.",
+      "nouveau": "Interface de démonstration droit-de-retard : document de vol et trace de l’analyse."
+    },
+    {
+      "id": "W2-ddr-og-alt-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : og:image:alt du récit",
+      "champ": "og:image:alt",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard: prototype preview",
+      "nouveau": "droit-de-retard: prototype preview"
+    },
+    {
+      "id": "W2-ddr-og-alt-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : og:image:alt du récit (et W3 3.1, espace insécable avant « : »)",
+      "champ": "og:image:alt",
+      "routes": [
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard : aperçu du prototype",
+      "nouveau": "droit-de-retard : aperçu du prototype"
+    },
+    {
+      "id": "W2-ddr-title",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : title du récit",
+      "champ": "title",
+      "routes": [
+        "/projects/droit-de-retard/",
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard | Arnaud Durand",
+      "nouveau": "droit-de-retard | Arnaud Durand"
+    },
+    {
+      "id": "W2-ddr-og-title",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : og:title du récit",
+      "champ": "og:title",
+      "routes": [
+        "/projects/droit-de-retard/",
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard | Arnaud Durand",
+      "nouveau": "droit-de-retard | Arnaud Durand"
+    },
+    {
+      "id": "W2-ddr-twitter-title",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, graphie « droit-de-retard » : twitter:title du récit",
+      "champ": "twitter:title",
+      "routes": [
+        "/projects/droit-de-retard/",
+        "/fr/projects/droit-de-retard/"
+      ],
+      "ancien": "Droit de Retard | Arnaud Durand",
+      "nouveau": "droit-de-retard | Arnaud Durand"
+    },
+    {
+      "id": "W2-frc-accueil-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, « French Red Cross » sur les pages anglaises : carte projet de l’accueil",
+      "champ": "texte",
+      "routes": [
+        "/"
+      ],
+      "ancien": "Croix-Rouge",
+      "nouveau": "French Red Cross",
+      "html": {
+        "ancien": "<h3>Croix-Rouge</h3>",
+        "nouveau": "<h3>French Red Cross</h3>"
+      }
+    },
+    {
+      "id": "W2-frc-projets-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, « French Red Cross » sur les pages anglaises : carte de Projets",
+      "champ": "texte",
+      "routes": [
+        "/projects/"
+      ],
+      "ancien": "Croix-Rouge",
+      "nouveau": "French Red Cross",
+      "html": {
+        "ancien": "<a href=\"/projects/croix-rouge/\">Croix-Rouge</a></h2>",
+        "nouveau": "<a href=\"/projects/croix-rouge/\">French Red Cross</a></h2>"
+      }
+    },
+    {
+      "id": "W2-frc-suite-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, « French Red Cross » sur les pages anglaises : lien « More stories »",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/",
+        "/projects/diary/"
+      ],
+      "ancien": "Croix-Rouge",
+      "nouveau": "French Red Cross",
+      "html": {
+        "ancien": "<a href=\"/projects/croix-rouge/\">Croix-Rouge<!-- --> <span",
+        "nouveau": "<a href=\"/projects/croix-rouge/\">French Red Cross<!-- --> <span"
+      }
+    },
+    {
+      "id": "W2-frc-title-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, « French Red Cross » sur les pages anglaises : title du récit",
+      "champ": "title",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "Croix-Rouge | Arnaud Durand",
+      "nouveau": "French Red Cross | Arnaud Durand"
+    },
+    {
+      "id": "W2-frc-og-title-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, « French Red Cross » sur les pages anglaises : og:title du récit",
+      "champ": "og:title",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "Croix-Rouge | Arnaud Durand",
+      "nouveau": "French Red Cross | Arnaud Durand"
+    },
+    {
+      "id": "W2-frc-twitter-title-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W2, « French Red Cross » sur les pages anglaises : twitter:title du récit",
+      "champ": "twitter:title",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "Croix-Rouge | Arnaud Durand",
+      "nouveau": "French Red Cross | Arnaud Durand"
+    },
+    {
+      "id": "W3-2.5-note-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W3 2.5, note de Compétences (« quand il existe »)",
+      "champ": "texte",
+      "routes": [
+        "/fr/skills/"
+      ],
+      "ancien": "au travail ; le lien à côté",
+      "nouveau": "au travail ; quand il existe, le lien à côté"
+    },
+    {
+      "id": "W3-2.7-cdi-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W3 2.7, phrase de recherche (« ou en plateforme IA »)",
+      "champ": "texte",
+      "routes": [
+        "/fr/",
+        "/fr/projects/",
+        "/fr/hackathons/",
+        "/fr/skills/",
+        "/fr/projects/droit-de-retard/",
+        "/fr/projects/diary/",
+        "/fr/projects/croix-rouge/"
+      ],
+      "ancien": "Je cherche un CDI en IA appliquée ou plateforme IA,",
+      "nouveau": "Je cherche un CDI en IA appliquée ou en plateforme IA,"
+    },
+    {
+      "id": "W3-3.2-coconstruit-fr",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W3 3.2, « co-construit » insécable dans la fiche Croix-Rouge (présentation seule : enveloppe insécable, texte inchangé)",
+      "champ": "texte",
+      "routes": [
+        "/fr/"
+      ],
+      "ancien": "RAG co-construit",
+      "nouveau": "RAG co-construit",
+      "html": {
+        "ancien": "RAG co-construit",
+        "nouveau": "RAG <span class=\"tree-nowrap\">co-construit</span>"
+      }
+    },
+    {
+      "id": "W4-A1-compte-rendu-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A1, Hackathons : « write-up »",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "Team hardware experiment, documented in my public account.",
+      "nouveau": "Team hardware experiment, described in a public write-up."
+    },
+    {
+      "id": "W4-A1-lien-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A1, Hackathons : libellé du lien",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "My account on LinkedIn",
+      "nouveau": "My write-up on LinkedIn"
+    },
+    {
+      "id": "W4-A2-lcl-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A2, Hackathons : temps du verbe",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "The project is offline since its cloud environment was closed.",
+      "nouveau": "The project has been offline since its cloud environment was shut down."
+    },
+    {
+      "id": "W4-A5-role-ddr-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A5, rôle droit-de-retard",
+      "champ": "texte",
+      "routes": [
+        "/",
+        "/projects/",
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Personal continuation of a team project",
+      "nouveau": "My own follow-up to a team project"
+    },
+    {
+      "id": "W4-A5-h2-ddr-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A5, titre de section du récit droit-de-retard",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "A team idea, followed by a personal continuation",
+      "nouveau": "A team idea, then my own follow-up"
+    },
+    {
+      "id": "W4-A5-h2-diary-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A5, titre de section du récit Diary",
+      "champ": "texte",
+      "routes": [
+        "/projects/diary/"
+      ],
+      "ancien": "Two hackathons, then a continuation",
+      "nouveau": "Two hackathons, then my own follow-up"
+    },
+    {
+      "id": "W4-A5-diary-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A5, récit Diary",
+      "champ": "texte",
+      "routes": [
+        "/projects/diary/"
+      ],
+      "ancien": "Diary is my personal continuation:",
+      "nouveau": "Diary is where I took it further on my own:"
+    },
+    {
+      "id": "W4-A6-coach-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A6, récit Croix-Rouge (« contributions to », « in a scenario »)",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "and help on the Socratic coach, which puts first-aiders in a situation and",
+      "nouveau": "and contributions to the Socratic coach, which puts first-aiders in a scenario and"
+    },
+    {
+      "id": "W4-A6-credits-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A6, crédits du récit Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "flashcards and help on the Socratic coach over six months",
+      "nouveau": "flashcards and contributions to the Socratic coach over six months"
+    },
+    {
+      "id": "W4-A8-regles-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A8, récit droit-de-retard",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Qualification rules and calculations remain in Python.",
+      "nouveau": "Eligibility rules and calculations stay in Python."
+    },
+    {
+      "id": "W4-A8-service-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A8, récit droit-de-retard",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "not a passenger-representation service",
+      "nouveau": "not a service that represents passengers"
+    },
+    {
+      "id": "W4-A8-depot-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A8, récit droit-de-retard",
+      "champ": "texte",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "The repository preserves the history of collective work and contributions assisted by AI tools.",
+      "nouveau": "The repository keeps the history of the team’s work and of AI-assisted contributions."
+    },
+    {
+      "id": "W4-A9-stand-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A9, récit Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "I stayed with the team at the stand",
+      "nouveau": "I was at the stand with the team"
+    },
+    {
+      "id": "W4-A9-personnes-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A9, récit Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "with the people concerned.",
+      "nouveau": "with the people it is for."
+    },
+    {
+      "id": "W4-A9-cadre-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A9, crédits du récit Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "in the context of IA",
+      "nouveau": "as part of IA"
+    },
+    {
+      "id": "W4-A9-rang-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A9, récit Croix-Rouge",
+      "champ": "texte",
+      "routes": [
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "The project finished 1st of 12 teams",
+      "nouveau": "The project came first out of 12 teams"
+    },
+    {
+      "id": "W4-A11-accord-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A11, page BNP (jointure « , and » pour la phrase)",
+      "champ": "texte",
+      "routes": [
+        "/experiences/bnp-paribas/"
+      ],
+      "ancien": ", with about 95% analyst agreement with the tool's comments;",
+      "nouveau": ", and analysts agreed with about 95% of the tool’s comments;",
+      "ancienV7": ", with about 95% analyst agreement with the tool’s comments;"
+    },
+    {
+      "id": "W4-A12-annee-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A12, Hackathons",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "Year shown when an exact date is not established.",
+      "nouveau": "Where no exact date is known, only the year is shown."
+    },
+    {
+      "id": "W4-A12-gemma-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A12, Hackathons",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "Participation in the original team project, followed by a personal continuation in droit-de-retard.",
+      "nouveau": "Took part in the original team project, then continued it on my own as droit-de-retard."
+    },
+    {
+      "id": "W4-A12-shipfast-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A12, Hackathons",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "Participation in the team prototype, with contributions recorded in the team repository.",
+      "nouveau": "Worked on the team prototype; my contributions are in the team repository."
+    },
+    {
+      "id": "W4-A12-stationf-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A12, Hackathons",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "Team prototype; this event does not represent a second independent project.",
+      "nouveau": "Team prototype; not a separate project."
+    },
+    {
+      "id": "W4-A12-lerobot-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A12, Hackathons",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "the robot playing a complete game was not finalised.",
+      "nouveau": "we did not get the robot to play a complete game."
+    },
+    {
+      "id": "W4-A12-changenow-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A12, Hackathons",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "at ChangeNOW, conversations with visitors at the Red Cross stand.",
+      "nouveau": "at ChangeNOW, talked with visitors at the Red Cross stand."
+    },
+    {
+      "id": "W4-A12-temoignages-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A12, Hackathons",
+      "champ": "texte",
+      "routes": [
+        "/hackathons/"
+      ],
+      "ancien": "with testimonies from women scientists",
+      "nouveau": "with first-hand accounts from women scientists"
+    },
+    {
+      "id": "W4-A13-langues-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A13, ligne des langues du bloc de contact",
+      "champ": "texte",
+      "routes": [
+        "/",
+        "/projects/",
+        "/hackathons/",
+        "/skills/",
+        "/projects/droit-de-retard/",
+        "/projects/diary/",
+        "/projects/croix-rouge/"
+      ],
+      "ancien": "French native; English fluent; Spanish B1.",
+      "nouveau": "Native French, fluent English, Spanish (B1)."
+    },
+    {
+      "id": "W4-A14-resume-ddr-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A14, résumé droit-de-retard (troisième personne)",
+      "champ": "texte",
+      "routes": [
+        "/",
+        "/projects/"
+      ],
+      "ancien": "Prepare a draft flight claim from documents",
+      "nouveau": "Prepares a draft flight-delay compensation claim from documents"
+    },
+    {
+      "id": "W4-A14-description-ddr-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A14, méta-description du récit droit-de-retard",
+      "champ": "description",
+      "routes": [
+        "/projects/droit-de-retard/"
+      ],
+      "ancien": "Prepare a draft flight claim from documents, with explicit validation and calculations in Python.",
+      "nouveau": "Prepares a draft flight-delay compensation claim from documents, with explicit validation and calculations in Python."
+    },
+    {
+      "id": "W4-A14-resume-diary-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A14, résumé Diary (troisième personne)",
+      "champ": "texte",
+      "routes": [
+        "/",
+        "/projects/"
+      ],
+      "ancien": "Connect browser voice recordings",
+      "nouveau": "Connects browser voice recordings"
+    },
+    {
+      "id": "W4-A14-description-diary-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A14, méta-description du récit Diary",
+      "champ": "description",
+      "routes": [
+        "/projects/diary/"
+      ],
+      "ancien": "Connect browser voice recordings to audio processing, storage and weekly reports.",
+      "nouveau": "Connects browser voice recordings to audio processing, storage and weekly reports."
+    },
+    {
+      "id": "W4-A15-locale-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A15, og:locale des pages anglaises",
+      "champ": "og:locale",
+      "routes": [
+        "/",
+        "/projects/",
+        "/hackathons/",
+        "/skills/",
+        "/projects/droit-de-retard/",
+        "/projects/diary/",
+        "/projects/croix-rouge/",
+        "/experiences/bnp-paribas/",
+        "/experiences/bpce/",
+        "/experiences/ecole-42/"
+      ],
+      "ancien": "en_US",
+      "nouveau": "en_GB"
+    },
+    {
+      "id": "W4-A19-intro-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A19, introduction de Compétences (remplace Z4-intro-en, dont « them » reste)",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "The skills from my CV, in text rather than in a picture, so a person or a machine can read it.",
+      "nouveau": "The skills from my CV, as text rather than an image, so both people and machines can read them."
+    },
+    {
+      "id": "W4-A19-description-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A19, méta-description de Compétences (remplace Z4-description-en)",
+      "champ": "description",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "The skills from my CV, in text rather than in a picture, so a person or a machine can read it. Each line says where it was actually used.",
+      "nouveau": "The skills from my CV, as text rather than an image, so both people and machines can read them. Each line says where it was actually used."
+    },
+    {
+      "id": "W4-A19-note-en",
+      "decision": "Tour W (tmp/refonte-arbre/contrat-relecture-w.md), décision d’Arnaud des 25–26/11/2026 : W4 A19 (« I have deliberately left out proficiency levels ») et W3 2.5 en anglais (« where there is one »)",
+      "champ": "texte",
+      "routes": [
+        "/skills/"
+      ],
+      "ancien": "Levels are deliberately absent. What is written here is what I have used on a project or at work; the link next to it is where you can check.",
+      "nouveau": "I have deliberately left out proficiency levels. What is written here is what I have used on a project or at work; where there is one, the link next to it is where you can check."
+    }
+  ]
+}

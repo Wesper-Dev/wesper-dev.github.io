@@ -1,13 +1,13 @@
 [
   {
     "id": "droit-de-retard",
-    "name": "Droit de Retard",
+    "name": "droit-de-retard",
     "year": "2026",
     "repo": "https://github.com/Wesper-Dev/droit-de-retard",
     "story": "droit-de-retard",
     "fr": {
       "summary": "Préparer un brouillon de réclamation aérienne à partir de documents, avec des validations et calculs explicites en Python.",
-      "role": "Continuation personnelle d’un projet collectif : validation des appels d’outils, tests de régression et CI.",
+      "role": "Continuation personnelle d’un projet collectif : validation des appels d’outils, tests de régression et CI.",
       "status": "Prototype informatif",
       "tags": [
         "Python",
@@ -16,8 +16,8 @@
       ]
     },
     "en": {
-      "summary": "Prepare a draft flight claim from documents, with explicit validation and calculations in Python.",
-      "role": "Personal continuation of a team project: tool-call validation, regression tests and CI.",
+      "summary": "Prepares a draft flight-delay compensation claim from documents, with explicit validation and calculations in Python.",
+      "role": "My own follow-up to a team project: tool-call validation, regression tests and CI.",
       "status": "Informational prototype",
       "tags": [
         "Python",
@@ -43,7 +43,7 @@
       ]
     },
     "en": {
-      "summary": "Connect browser voice recordings to audio processing, storage and weekly reports.",
+      "summary": "Connects browser voice recordings to audio processing, storage and weekly reports.",
       "role": "Personal continuation of Kura, a team project developed across two hackathons.",
       "status": "Proof of concept",
       "tags": [
@@ -62,7 +62,7 @@
     "story": "croix-rouge",
     "fr": {
       "summary": "Plateforme collective de formation aux premiers secours, 1re sur 12 équipes à IA & Crise, testée auprès d’environ 50 secouristes, présentée à ChangeNOW et au sommet AI for Good (2025).",
-      "role": "Bénévolat : front et RAG du chatbot au hackathon (manuel de 700 pages), puis six mois en équipe sur l’application : front, back, flashcards, aide sur le coach socratique. Le dépôt public montre une partie du code de l’équipe, jusqu’en mai 2025 ; le reste est resté interne à la Croix-Rouge.",
+      "role": "Bénévolat : front du chatbot et RAG co-construit au hackathon (manuel de 700 pages), puis six mois en équipe sur l’application : front, back, flashcards, aide sur le coach socratique. Le dépôt public montre une partie du code de l’équipe ; le reste est resté interne à la Croix-Rouge.",
       "status": "Projet collectif présenté publiquement",
       "tags": [
         "IA",
@@ -70,8 +70,9 @@
       ]
     },
     "en": {
+      "name": "French Red Cross",
       "summary": "A collective first-aid training platform, 1st of 12 teams at IA & Crise, tested with about 50 first-aiders, shown at ChangeNOW and the AI for Good summit (2025).",
-      "role": "Volunteer: the chatbot’s front end and RAG at the hackathon (700-page manual), then six months on the app with the team: front end, back end, flashcards, help on the Socratic coach. The public repository shows part of the team’s code, up to May 2025; the rest stayed inside the Red Cross.",
+      "role": "Volunteer: the chatbot’s front end and co-built RAG at the hackathon (700-page manual), then six months on the app with the team: front end, back end, flashcards, contributions to the Socratic coach. The public repository shows part of the team’s code; the rest stayed inside the Red Cross.",
       "status": "Team project presented publicly",
       "tags": [
         "AI",
@@ -86,8 +87,8 @@
     "repo": "https://github.com/Wesper-Dev/Minishell",
     "story": null,
     "fr": {
-      "summary": "Un shell en C : exécution de commandes, pipes, redirections et gestion des processus.",
-      "role": "Projet du cursus 42 ; travail sur l’exécution et les appels système UNIX.",
+      "summary": "Un shell en C : exécution de commandes, pipes, redirections et gestion des processus.",
+      "role": "Projet du cursus 42 ; travail sur l’exécution et les appels système UNIX.",
       "status": "Projet pédagogique",
       "tags": [
         "C",
@@ -112,7 +113,7 @@
     "story": null,
     "fr": {
       "summary": "Infrastructure multi-conteneurs avec NGINX, WordPress et MariaDB, volumes persistants et réseau dédié.",
-      "role": "Projet du cursus 42 : Dockerfiles et orchestration des services.",
+      "role": "Projet du cursus 42 : Dockerfiles et orchestration des services.",
       "status": "Projet pédagogique",
       "tags": [
         "Docker",
