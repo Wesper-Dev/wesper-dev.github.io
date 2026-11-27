@@ -131,7 +131,7 @@ test('P2 témoins : chaque mutation de la page synthétique est refusée (FR et 
       ['paragraphe sandbox tronqué', ok.replace(sandboxP, `<p>${escHtml(r.sandbox[l].slice(0, -12))}</p>`), /sandbox/],
       ['rôle retiré', ok.replace(escHtml(r.role[l]), ''), /rôle/],
       ['dates retirées', ok.replace(escHtml(r.dates[l]), ''), /dates/],
-      ['h1 changé', ok.replace(/<h1>[^<]*<\/h1>/, '<h1>BPCE (Huber)</h1>'), /h1/],
+      ['h1 changé', ok.replace(/<h1>[^<]*<\/h1>/, '<h1>BPCE (témoin)</h1>'), /h1/],
       ['« mieux optimisé »', add(ok, 'Un planning mieux optimisé qu\'à la main.'), /mieux optimis/],
       ['« better optimised »', add(ok, 'A better optimised schedule.'), /optimi/],
       ['POC terminé', add(ok, 'Le POC était terminé.'), /terminé/],
@@ -148,7 +148,7 @@ test('P2 témoins : chaque mutation de la page synthétique est refusée (FR et 
       ['logo en <img>', ok.replace('<h1>', '<img src="/images/bpce.png" alt=""/><h1>'), /<img>/],
       ['emblème en <svg>', ok.replace('<h1>', '<svg viewBox="0 0 1 1"><circle r="1"/></svg><h1>'), /<svg>/],
       ['logo en style en ligne', ok.replace('<article class="story">', '<article class="story" style="background-image:url(/logo.png)">'), /style en ligne/],
-      ['texte hors FAITS', add(ok, 'Projet Huber, stagiaire LAB 42.'), /absent de FAITS/],
+      ['texte hors FAITS', add(ok, 'Phrase témoin absente de la référence.'), /absent de FAITS/],
       ['<title> hors gabarit', ok.replace(/<title>[^<]*<\/title>/, '<title>BPCE</title>'), /<title>/],
       ['og:image changée', ok.replace(/(<meta property="og:image" content=")[^"]*/, '$1https://wesper-dev.github.io/images/bpce-logo.png'), /og:image/],
     ];
