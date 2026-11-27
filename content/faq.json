@@ -1,0 +1,135 @@
+{
+ "_lisezMoi": "Texte de la FAQ de l’accueil (lot 6a). Chaque réponse est une liste de blocs ; un bloc peut porter des liens [libellé](adresse). Ce texte est figé par tests/fixtures/faq-lot6.json (v8-textes-figes.test.ts).",
+ "fr": {
+  "title": "Questions fréquentes",
+  "items": [
+   {
+    "id": "production",
+    "question": "Quel outil a été validé pour la production ?",
+    "answer": [
+     "Chez BNP Paribas, j’ai développé en binôme un outil d’analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d’un rapport est passé de 3–5 à 1–3 minutes."
+    ],
+    "link": {
+     "text": "Lire le cas BNP Paribas",
+     "href": "/fr/experiences/bnp-paribas/"
+    }
+   },
+   {
+    "id": "droit-de-retard",
+    "question": "Où consulter le code de droit-de-retard et reproduire son évaluation ?",
+    "answer": [
+     "Le code est dans [mon dépôt public](https://github.com/Wesper-Dev/droit-de-retard), continuation personnelle d’un projet de hackathon. Le dépôt contient une [documentation d’évaluation](https://github.com/Wesper-Dev/droit-de-retard/blob/main/docs/EVALUATION.md), des commandes de reproduction et des exemples de sortie. Plus de 120 tests hors ligne."
+    ],
+    "link": null
+   },
+   {
+    "id": "bpce",
+    "question": "Qu’avez-vous fait chez BPCE ?",
+    "answer": [
+     "J’ai conçu la sandbox Docker d’un POC de runtime d’agents, selon les contraintes visées en production : exécution non root, réseau en liste blanche ; j’ai contribué avec l’équipe infra à son architecture Kubernetes."
+    ],
+    "link": {
+     "text": "Lire le cas BPCE",
+     "href": "/fr/experiences/bpce/"
+    }
+   },
+   {
+    "id": "croix-rouge",
+    "question": "Quelle a été votre part dans le projet Croix-Rouge ?",
+    "answer": [
+     "Au hackathon, j’ai développé le front et les fonctionnalités d’un chatbot pour secouristes et co-construit son RAG sur un manuel de 700 pages ; pendant six mois, en équipe, j’ai travaillé sur le front et le back de l’application, les flashcards et une contribution au coach socratique. La plateforme d’équipe a été testée auprès d’environ 50 secouristes."
+    ],
+    "link": {
+     "text": "Lire le récit",
+     "href": "/fr/projects/croix-rouge/"
+    }
+   },
+   {
+    "id": "formation",
+    "question": "Quelle formation avez-vous suivie ?",
+    "answer": [
+     "École 42 Paris, 2019–2026",
+     "Un cursus par projets : C/C++, UNIX/POSIX, concurrence. Minishell, un shell en C (pipes, redirections, processus) ; Inception, une infrastructure Docker (NGINX, WordPress, MariaDB)."
+    ],
+    "link": {
+     "text": "Voir la formation",
+     "href": "/fr/experiences/ecole-42/"
+    }
+   },
+   {
+    "id": "disponibilite-cv",
+    "question": "Êtes-vous disponible, et où trouver votre CV ?",
+    "answer": [
+     "Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source. Mon CV public se télécharge en [français (PDF)](/cv/arnaud-durand-cv-platform-fr.pdf) ou en [anglais (PDF)](/cv/arnaud-durand-cv-platform-en.pdf)."
+    ],
+    "link": null
+   }
+  ]
+ },
+ "en": {
+  "title": "Frequently asked questions",
+  "items": [
+   {
+    "id": "production",
+    "question": "Which tool was approved for production?",
+    "answer": [
+     "At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes."
+    ],
+    "link": {
+     "text": "Read the BNP Paribas case",
+     "href": "/experiences/bnp-paribas/"
+    }
+   },
+   {
+    "id": "droit-de-retard",
+    "question": "Where can I see the droit-de-retard code and reproduce its evaluation?",
+    "answer": [
+     "The code is in [my public repository](https://github.com/Wesper-Dev/droit-de-retard), a personal continuation of a hackathon project. The repository includes [evaluation documentation](https://github.com/Wesper-Dev/droit-de-retard/blob/main/docs/EVALUATION.md), reproduction commands and example outputs. More than 120 offline tests."
+    ],
+    "link": null
+   },
+   {
+    "id": "bpce",
+    "question": "What did you do at BPCE?",
+    "answer": [
+     "I designed the Docker sandbox for an agent-runtime PoC with future production security requirements in mind: non-root execution and allow-listed network access; I contributed to its Kubernetes design with the infrastructure team."
+    ],
+    "link": {
+     "text": "Read the BPCE case",
+     "href": "/experiences/bpce/"
+    }
+   },
+   {
+    "id": "croix-rouge",
+    "question": "What was your role in the French Red Cross project?",
+    "answer": [
+     "At the hackathon, I built the front end and features of a chatbot for first-aiders and co-built its RAG over a 700-page manual; over six months, with the team, I worked on the app’s front and back end and the flashcards, and contributed to the Socratic coach. The team platform was tested with about 50 first-aiders."
+    ],
+    "link": {
+     "text": "Read the story",
+     "href": "/projects/croix-rouge/"
+    }
+   },
+   {
+    "id": "formation",
+    "question": "Where did you study?",
+    "answer": [
+     "École 42 Paris, 2019–2026",
+     "A project-based curriculum: C/C++, UNIX/POSIX, concurrency. Minishell, a shell in C (pipes, redirections, processes); Inception, a Docker infrastructure (NGINX, WordPress, MariaDB)."
+    ],
+    "link": {
+     "text": "See the curriculum",
+     "href": "/experiences/ecole-42/"
+    }
+   },
+   {
+    "id": "disponibilite-cv",
+    "question": "Are you available, and where can I find your CV?",
+    "answer": [
+     "Available now — permanent role; open to freelance and open-source projects. My public CV can be downloaded in [French (PDF)](/cv/arnaud-durand-cv-platform-fr.pdf) or [English (PDF)](/cv/arnaud-durand-cv-platform-en.pdf)."
+    ],
+    "link": null
+   }
+  ]
+ }
+}

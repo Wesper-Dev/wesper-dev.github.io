@@ -13,12 +13,14 @@
     "format": "oxfmt",
     "postbuild": "node scripts/normalize-export.mjs",
     "preview": "node scripts/preview.mjs",
-    "check": "tsc --noEmit && python3 scripts/check-export.py"
+    "check": "tsc --noEmit && python3 scripts/check-export.py",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "react-server-dom-webpack": "19.2.8",
+    "three": "0.187.0",
     "vinext": "1.0.0-beta.5"
   },
   "devDependencies": {
@@ -29,6 +31,7 @@
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
+    "@types/three": "0.187.0",
     "@vitejs/plugin-react": "6.0.2",
     "@vitejs/plugin-rsc": "0.5.26",
     "oxfmt": "0.61.0",

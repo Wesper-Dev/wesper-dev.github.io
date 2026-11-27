@@ -2,9 +2,9 @@
 
 A voice journal, from the browser to weekly reports.
 
-## Two hackathons, then a continuation
+## Two hackathons, then my own follow-up
 
-Kura is a team audio-journal project developed at the Google Cloud Partner Agentic AI Hackathon and then the One-Person Unicorn Vibe-a-thon at STATION F. Diary is my personal continuation: developing the path between recording, audio processing, storage and reports.
+Kura is a team audio-journal project developed at the Google Cloud Partner Agentic AI Hackathon and then the One-Person Unicorn Vibe-a-thon at STATION F. Diary is where I took it further on my own: developing the path between recording, audio processing, storage and reports.
 
 ## Connecting the steps
 

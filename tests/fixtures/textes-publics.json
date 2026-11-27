@@ -1,0 +1,555 @@
+{
+  "_lisezMoi": "Copie versionnée des textes publics attendus (F12, audit Fable du lot 2a). Ne pas éditer à la main : régénérer avec node --experimental-strip-types tests/fixtures/regenerer-textes-publics.ts ; f12-copie-faits.test.ts échoue si elle diverge de FAITS.md ou de BASE_DONNEES.md.",
+  "_sources": {
+    "faits": "deliverables/refonte-arbre/FAITS.md (§1, §2 et §4 pages de détail, §6.1, §6.2, §7 ; sections et pages ouvertes)",
+    "contact": "BASE_DONNEES.md (tableau des profils : Email, GitHub, LinkedIn)"
+  },
+  "faits": {
+    "tree": {
+      "nodes": [
+        {
+          "id": "c",
+          "layer": "root",
+          "label": {
+            "fr": "C · C++",
+            "en": "C · C++"
+          },
+          "icon": "cplusplus",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "ecole-42",
+              "fr": "Minishell en C ; C++ au cursus de 42",
+              "en": "Minishell in C; C++ in the 42 curriculum"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "unix",
+          "layer": "root",
+          "label": {
+            "fr": "Unix · shell",
+            "en": "Unix · shell"
+          },
+          "icon": "gnubash",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "ecole-42",
+              "fr": "Minishell : pipes, redirections, processus",
+              "en": "Minishell: pipes, redirections, processes"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "tests",
+          "layer": "root",
+          "label": {
+            "fr": "Tests automatisés",
+            "en": "Automated tests"
+          },
+          "icon": "neutral",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "droit-de-retard",
+              "fr": "droit-de-retard : plus de 120 tests hors ligne",
+              "en": "droit-de-retard: more than 120 offline tests"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "python",
+          "layer": "trunk",
+          "label": {
+            "fr": "Python",
+            "en": "Python"
+          },
+          "icon": "python",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "bnp-paribas",
+              "fr": "BNP : file Python des appels au LLM",
+              "en": "BNP: Python queue for LLM calls"
+            },
+            {
+              "from": "droit-de-retard",
+              "fr": "droit-de-retard : règles et calculs",
+              "en": "droit-de-retard: rules and calculations"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "docker",
+          "layer": "trunk",
+          "label": {
+            "fr": "Docker",
+            "en": "Docker"
+          },
+          "icon": "docker",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "bnp-paribas",
+              "fr": "BNP : hôte de staging, 75+ conteneurs",
+              "en": "BNP: staging host, 75+ containers"
+            },
+            {
+              "from": "bpce",
+              "fr": "BPCE : sandbox Docker",
+              "en": "BPCE: Docker sandbox"
+            },
+            {
+              "from": "ecole-42",
+              "fr": "42 : Inception",
+              "en": "42: Inception"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "k8s",
+          "layer": "trunk",
+          "label": {
+            "fr": "Kubernetes (contribution)",
+            "en": "Kubernetes (contribution)"
+          },
+          "icon": "kubernetes",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "bpce",
+              "fr": "BPCE : contribution à la conception de l'architecture",
+              "en": "BPCE: contribution to the architecture design"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "obs",
+          "layer": "trunk",
+          "label": {
+            "fr": "Observabilité · Langfuse",
+            "en": "Observability · Langfuse"
+          },
+          "icon": "obs",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "bnp-paribas",
+              "fr": "BNP : Langfuse on-premise, adopté par 5 POC",
+              "en": "BNP: on-premises Langfuse, adopted by 5 PoCs"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "llm",
+          "layer": "canopy",
+          "label": {
+            "fr": "Pipelines LLM",
+            "en": "LLM pipelines"
+          },
+          "icon": "llm",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "bnp-paribas",
+              "fr": "BNP : captures analysées en parallèle par un LLM",
+              "en": "BNP: screenshots analysed in parallel by an LLM"
+            },
+            {
+              "from": "droit-de-retard",
+              "fr": "droit-de-retard : Gemma lit et rédige",
+              "en": "droit-de-retard: Gemma reads and drafts"
+            },
+            {
+              "from": "croix-rouge",
+              "fr": "Croix-Rouge : chatbot d'équipe avec un modèle Mistral, dont j'ai fait les fonctionnalités et co-construit le RAG",
+              "en": "French Red Cross: team chatbot using a Mistral model; I built its features and co-built its RAG"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "rag",
+          "layer": "canopy",
+          "label": {
+            "fr": "RAG",
+            "en": "RAG"
+          },
+          "icon": "rag",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "croix-rouge",
+              "fr": "Croix-Rouge : RAG co-construit sur un manuel de 700 pages",
+              "en": "French Red Cross: co-built RAG over a 700-page manual"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "agents",
+          "layer": "canopy",
+          "label": {
+            "fr": "Sandbox d'agents",
+            "en": "Agent sandbox"
+          },
+          "icon": "agents",
+          "ifYes": null,
+          "fragments": [
+            {
+              "from": "bpce",
+              "fr": "BPCE : isolation des outils d'agents (POC)",
+              "en": "BPCE: isolating agent tools (PoC)"
+            }
+          ],
+          "noAnswerTooltip": null
+        },
+        {
+          "id": "front",
+          "layer": "canopy",
+          "label": {
+            "fr": "React · front",
+            "en": "React · front-end"
+          },
+          "icon": "react",
+          "ifYes": {
+            "answer": "A-05",
+            "label": {
+              "fr": "Front-end",
+              "en": "Front-end"
+            },
+            "icon": "neutral"
+          },
+          "fragments": [
+            {
+              "from": "bnp-paribas",
+              "fr": "BNP : application React faite en binôme",
+              "en": "BNP: React app built as a pair"
+            },
+            {
+              "from": "croix-rouge",
+              "fr": "Croix-Rouge : front d'une application d'équipe",
+              "en": "French Red Cross: front end of a team app"
+            },
+            {
+              "from": "droit-de-retard",
+              "fr": "droit-de-retard : interface en JavaScript natif",
+              "en": "droit-de-retard: plain-JavaScript interface"
+            }
+          ],
+          "noAnswerTooltip": {
+            "fr": "BNP : application React faite en binôme",
+            "en": "BNP: React app built as a pair"
+          }
+        }
+      ],
+      "links": [
+        {
+          "exp": "bnp-paribas",
+          "skill": "llm",
+          "condition": "always"
+        },
+        {
+          "exp": "bnp-paribas",
+          "skill": "python",
+          "condition": "always"
+        },
+        {
+          "exp": "bnp-paribas",
+          "skill": "obs",
+          "condition": "always"
+        },
+        {
+          "exp": "bnp-paribas",
+          "skill": "docker",
+          "condition": "always"
+        },
+        {
+          "exp": "bnp-paribas",
+          "skill": "front",
+          "condition": "always"
+        },
+        {
+          "exp": "bpce",
+          "skill": "agents",
+          "condition": "always"
+        },
+        {
+          "exp": "bpce",
+          "skill": "k8s",
+          "condition": "always"
+        },
+        {
+          "exp": "bpce",
+          "skill": "docker",
+          "condition": "A-02"
+        },
+        {
+          "exp": "bpce",
+          "skill": "python",
+          "condition": "unconfirmed"
+        },
+        {
+          "exp": "croix-rouge",
+          "skill": "rag",
+          "condition": "always"
+        },
+        {
+          "exp": "croix-rouge",
+          "skill": "front",
+          "condition": "A-05"
+        },
+        {
+          "exp": "croix-rouge",
+          "skill": "llm",
+          "condition": "A-06"
+        },
+        {
+          "exp": "croix-rouge",
+          "skill": "python",
+          "condition": "unconfirmed"
+        },
+        {
+          "exp": "ecole-42",
+          "skill": "c",
+          "condition": "always"
+        },
+        {
+          "exp": "ecole-42",
+          "skill": "unix",
+          "condition": "always"
+        },
+        {
+          "exp": "ecole-42",
+          "skill": "docker",
+          "condition": "A-05"
+        },
+        {
+          "exp": "ecole-42",
+          "skill": "tests",
+          "condition": "unconfirmed"
+        },
+        {
+          "exp": "droit-de-retard",
+          "skill": "tests",
+          "condition": "always"
+        },
+        {
+          "exp": "droit-de-retard",
+          "skill": "python",
+          "condition": "always"
+        },
+        {
+          "exp": "droit-de-retard",
+          "skill": "llm",
+          "condition": "A-05"
+        },
+        {
+          "exp": "droit-de-retard",
+          "skill": "front",
+          "condition": "A-05"
+        }
+      ],
+      "experiences": [
+        {
+          "id": "bnp-paribas",
+          "short": "BNP",
+          "name": {
+            "fr": "BNP Paribas",
+            "en": "BNP Paribas"
+          },
+          "href": "experiences/bnp-paribas/"
+        },
+        {
+          "id": "bpce",
+          "short": "BPCE",
+          "name": {
+            "fr": "BPCE",
+            "en": "BPCE"
+          },
+          "href": "experiences/bpce/"
+        },
+        {
+          "id": "croix-rouge",
+          "short": "Croix-Rouge",
+          "name": {
+            "fr": "Croix-Rouge française",
+            "en": "French Red Cross"
+          },
+          "href": "projects/croix-rouge/"
+        },
+        {
+          "id": "ecole-42",
+          "short": "42",
+          "name": {
+            "fr": "École 42 Paris",
+            "en": "École 42 Paris"
+          },
+          "href": "experiences/ecole-42/"
+        },
+        {
+          "id": "droit-de-retard",
+          "short": "droit-de-retard",
+          "name": {
+            "fr": "droit-de-retard",
+            "en": "droit-de-retard"
+          },
+          "href": "projects/droit-de-retard/"
+        }
+      ]
+    },
+    "bnp": {
+      "paragraphs": {
+        "fr": [
+          "Dans l'application React développée en binôme, le traitement d'un rapport Word de tests de performance est passé de 3–5 à 1–3 min, notamment grâce à l'envoi en parallèle de ses 10–15 captures au LLM.",
+          "L'outil a été validé pour la production par le comité de pilotage, avec environ 95 % d'accord des analystes avec les commentaires de l'outil ; leur chef en estimait le gain à environ 300 jours-homme par an pour l'équipe. J'ai relevé dans Langfuse le coût de notre outil d'analyse : environ 0,30 à 0,40 € par rapport.",
+          "Pendant le projet, nous présentions nos avancées chaque semaine au commanditaire.",
+          "J'ai administré l'hôte de staging des outils LLM de l'équipe, utilisés chaque jour par des employés : environ 15 POC, 75+ conteneurs Docker ; j'ai remonté une perte de traces jusqu'au disque plein et récupéré 600 Go.",
+          "J'ai déployé Langfuse on-premise, adopté par 5 POC, rédigé un tutoriel et présenté son fonctionnement à l'équipe."
+        ],
+        "en": [
+          "In the React app we built as a pair, processing a Word report on performance tests fell from 3–5 to 1–3 minutes, partly because we sent its 10–15 screenshots to the LLM in parallel.",
+          "The tool was approved for production by the steering committee, and analysts agreed with about 95% of the tool's comments; their lead estimated the saving at about 300 person-days a year for the team. Langfuse put the cost of our analysis tool at about €0.30–0.40 per report.",
+          "During the project, we presented our progress to the sponsor every week.",
+          "I managed the staging host for the team's LLM tools, used daily by employees: around 15 PoCs, 75+ Docker containers; I traced a loss of Langfuse traces to a full disk and freed 600 GB.",
+          "I deployed Langfuse on-premises, adopted by 5 PoCs, wrote a tutorial and walked the team through it."
+        ]
+      },
+      "card": {
+        "fr": [
+          "3–5 min → 1–3 min par rapport",
+          "outil validé pour la production par le comité de pilotage"
+        ],
+        "en": [
+          "3–5 min → 1–3 min per report",
+          "tool approved for production by the steering committee"
+        ]
+      },
+      "meta": {
+        "fr": "Chez BNP Paribas, j'ai développé en binôme un outil d'analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d'un rapport est passé de 3–5 à 1–3 minutes.",
+        "en": "At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes."
+      }
+    },
+    "commons": {
+      "title": {
+        "fr": "Ingénieur logiciel",
+        "en": "Software Engineer"
+      },
+      "availability": {
+        "fr": "Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source",
+        "en": "Available now — permanent role; open to freelance and open-source projects"
+      },
+      "line42": {
+        "fr": "École 42 Paris, 2019–2026",
+        "en": "École 42 Paris, 2019–2026"
+      },
+      "bnpSentence": {
+        "fr": "Chez BNP Paribas, j'ai développé en binôme un outil d'analyse de rapports, validé pour la production par le comité de pilotage ; le traitement d'un rapport est passé de 3–5 à 1–3 minutes.",
+        "en": "At BNP Paribas, I built a report-analysis tool with a colleague; it was approved for production by the steering committee, and processing a report went from 3–5 to 1–3 minutes."
+      },
+      "caseLink": {
+        "fr": "Lire le cas BNP Paribas",
+        "en": "Read the BNP Paribas case"
+      }
+    },
+    "e31": [
+      "2025",
+      "2026",
+      "3–5 min → 1–3 min par rapport",
+      "3–5 min → 1–3 min per report",
+      "AI Platform Engineering Intern",
+      "Apr 2026 – Oct 2026",
+      "Available now — permanent role; open to freelance and open-source projects",
+      "Bénévole : front du chatbot et RAG co-construit",
+      "Coach depuis plus de 3 ans : plus de 50 séances, dont plus de 20 menées seul, 15 à 20 personnes par séance.",
+      "Coach for 3+ years: 50+ sessions, 20+ of them solo-led, 15–20 participants each.",
+      "Contribution IA bénévole",
+      "Data Scientist (stage)",
+      "Data Scientist Intern",
+      "Disponible immédiatement — CDI ; ouvert au freelance et aux projets open source",
+      "Docker, exécution non root, réseau en liste blanche",
+      "Docker, non-root execution, allow-listed network",
+      "Ingénierie plateforme IA (stage)",
+      "Ingénieur logiciel",
+      "Isolating agent tools",
+      "Isolation des outils d'agents",
+      "Les fondations : C, UNIX, projets système",
+      "Lire le cas BNP Paribas",
+      "More than 120 offline tests",
+      "Personal project",
+      "Plus de 120 tests hors ligne",
+      "Projet personnel",
+      "Read the BNP Paribas case",
+      "Sep 2025 – Mar 2026",
+      "Software Engineer",
+      "The foundations: C, UNIX, systems projects",
+      "Volunteer AI Contributor",
+      "Volunteer: chatbot front end and co-built RAG",
+      "avr. 2026 – oct. 2026",
+      "brouillon de réclamation pour vol retardé, prototype local-first",
+      "draft flight-delay claim, local-first prototype",
+      "outil validé pour la production par le comité de pilotage",
+      "plateforme d'équipe testée auprès d'environ 50 secouristes",
+      "sept. 2025 – mars 2026",
+      "team platform tested with about 50 first-aiders",
+      "tool approved for production by the steering committee",
+      "École 42 Paris, 2019–2026"
+    ],
+    "bpce": {
+      "name": "BPCE",
+      "role": {
+        "fr": "Ingénierie plateforme IA (stage)",
+        "en": "AI Platform Engineering Intern"
+      },
+      "dates": {
+        "fr": "avr. 2026 – oct. 2026",
+        "en": "Apr 2026 – Oct 2026"
+      },
+      "cardHook": {
+        "fr": "Isolation des outils d'agents",
+        "en": "Isolating agent tools"
+      },
+      "cardSubtitle": {
+        "fr": "Docker, exécution non root, réseau en liste blanche",
+        "en": "Docker, non-root execution, allow-listed network"
+      },
+      "sandbox": {
+        "fr": "J'ai conçu la sandbox Docker d'un POC de runtime d'agents, selon les contraintes visées en production : exécution non root, réseau en liste blanche ; j'ai contribué avec l'équipe infra à son architecture Kubernetes. Ce POC ne tournait pas en production.",
+        "en": "I designed the Docker sandbox for an agent-runtime PoC with future production security requirements in mind: non-root execution and allow-listed network access; I contributed to its Kubernetes design with the infrastructure team. The PoC did not run in production."
+      },
+      "trainingTitle": {
+        "fr": "Un autre outil : la planification des formations",
+        "en": "A separate tool: training scheduling"
+      },
+      "training": {
+        "fr": "Avec un POC d'optimisation sous 20 règles métier, la planification des formations de 1 500 à 3 000 collaborateurs est passée de 1–2 jours à 1 h.",
+        "en": "With an optimisation PoC covering 20 business rules, scheduling training for 1,500–3,000 employees went from 1–2 days to 1 hour."
+      }
+    },
+    "ecole42": {
+      "name": "École 42 Paris",
+      "line": "École 42 Paris, 2019–2026",
+      "cardSubtitle": {
+        "fr": "Les fondations : C, UNIX, projets système",
+        "en": "The foundations: C, UNIX, systems projects"
+      },
+      "paragraph": {
+        "fr": "Un cursus par projets : C/C++, UNIX/POSIX, concurrence. Minishell, un shell en C (pipes, redirections, processus) ; Inception, une infrastructure Docker (NGINX, WordPress, MariaDB).",
+        "en": "A project-based curriculum: C/C++, UNIX/POSIX, concurrency. Minishell, a shell in C (pipes, redirections, processes); Inception, a Docker infrastructure (NGINX, WordPress, MariaDB)."
+      }
+    }
+  },
+  "contact": {
+    "mail": "arnaud.durand97@gmail.com",
+    "github": "https://github.com/Wesper-Dev",
+    "linkedin": "https://www.linkedin.com/in/arnaud-durand42/"
+  }
+}
